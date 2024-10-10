@@ -29,7 +29,9 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+#define MPU6050_ADDR 0x68
+#define WHO_AM_I_REG 0x75
+#define PWR_MGMT_1_REG 0x6B
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -51,6 +53,10 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+void MPU6050_Init(void);
+uint8_t MPU6050_ReadWhoAmI(void);
+void MPU6050_Write(uint8_t reg, uint8_t data);
+uint8_t MPU6050_Read(uint8_t reg);
 
 /* USER CODE END PFP */
 
@@ -90,8 +96,14 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI2_Init();
   MX_USART2_UART_Init();
-  /* USER CODE BEGIN 2 */
+  MPU6050_Init();
 
+  /* USER CODE BEGIN 2 */
+  uint8_t who_am_i = MPU6050_ReadWhoAmI();
+    if (who_am_i == 0x68) {
+        // Successfully connected
+        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13); // Toggle LED to indicate success
+    }
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -99,7 +111,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+     HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -144,6 +156,40 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+/* MPU6050 Initialization Function */
+void MPU6050_Init(void)
+{
+    // Wake up the MPU6050 by writing 0 to the power management register
+    MPU6050_Write(PWR_MGMT_1_REG, 0x00);
+}
+
+/* Function to Write to MPU6050 Register */
+void MPU6050_Write(uint8_t reg, uint8_t data)
+{
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_RESET); // NSS low
+    uint8_t txData[2] = {reg, data};
+    HAL_SPI_Transmit(&hspi2, txData, 2, HAL_MAX_DELAY);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET); // NSS high
+}
+
+/* Function to Read from MPU6050 Register */
+uint8_t MPU6050_Read(uint8_t reg)
+{
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_RESET); // NSS low
+    uint8_t txData = reg | 0x80; // Set MSB to 1 for read operation
+    uint8_t rxData;
+    HAL_SPI_Transmit(&hspi2, &txData, 1, HAL_MAX_DELAY);
+    HAL_SPI_Receive(&hspi2, &rxData, 1, HAL_MAX_DELAY);
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET); // NSS high
+    return rxData;
+}
+
+/* Function to Read the WHO_AM_I Register */
+uint8_t MPU6050_ReadWhoAmI(void)
+{
+    return MPU6050_Read(WHO_AM_I_REG);
+}
 
 /* USER CODE END 4 */
 
