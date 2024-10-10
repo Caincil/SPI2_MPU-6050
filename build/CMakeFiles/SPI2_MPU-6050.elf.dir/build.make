@@ -83,10 +83,24 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/gpio.c -o CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.s
 
+CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/flags.make
+CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/i2c.c
+CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj -MF CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj.d -o CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj -c /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/i2c.c
+
+CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/i2c.c > CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.i
+
+CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/i2c.c -o CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.s
+
 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/flags.make
 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/main.c
 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj -MF CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj.d -o CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj -c /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/main.c
 
 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.i: cmake_force
@@ -96,20 +110,6 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.i: cmake_force
 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/main.c -o CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.s
-
-CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/flags.make
-CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/spi.c
-CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.obj -MF CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.obj.d -o CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.obj -c /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/spi.c
-
-CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/spi.c > CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.i
-
-CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/spi.c -o CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.s
 
 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/flags.make
 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/stm32f1xx_hal_msp.c
@@ -307,10 +307,24 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c -o CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 
+CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/flags.make
+CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
+CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -MF CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj.d -o CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -c /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
+
+CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c > CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
+
+CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c -o CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
+
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/flags.make
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -c /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/flags.make
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -c /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/flags.make
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -c /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
@@ -348,20 +362,6 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c -o CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s
-
-CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/flags.make
-CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c
-CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj -MF CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj.d -o CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj -c /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c
-
-CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c > CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.i
-
-CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c -o CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.s
 
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/SPI2_MPU-6050.elf.dir/flags.make
 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
@@ -421,8 +421,8 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.s: cmake_force
 # Object files for target SPI2_MPU-6050.elf
 SPI2_MPU__6050_elf_OBJECTS = \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.obj" \
+"CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj" \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj" \
-"CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.obj" \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj" \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/syscalls.c.obj" \
@@ -437,10 +437,10 @@ SPI2_MPU__6050_elf_OBJECTS = \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" \
+"CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj" \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" \
-"CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj" \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" \
 "CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" \
@@ -450,8 +450,8 @@ SPI2_MPU__6050_elf_OBJECTS = \
 SPI2_MPU__6050_elf_EXTERNAL_OBJECTS =
 
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.obj
+SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
-SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.obj
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/syscalls.c.obj
@@ -466,10 +466,10 @@ SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
+SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
-SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
 SPI2_MPU-6050.elf: CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj

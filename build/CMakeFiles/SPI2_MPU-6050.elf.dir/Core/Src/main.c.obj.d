@@ -24,10 +24,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj: \
  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+ /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/spi.h \
+ /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/i2c.h \
  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/main.h \
  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/usart.h \
  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/gpio.h \
@@ -39,6 +39,4 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj: \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
  /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
- /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/stdio.h \
- /usr/include/newlib/string.h /usr/include/newlib/sys/_locale.h \
- /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/stdio.h

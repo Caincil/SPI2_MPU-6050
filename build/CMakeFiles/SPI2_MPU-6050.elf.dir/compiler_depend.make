@@ -23,18 +23,48 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.obj: /home/caincil/Project/Serv
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
+
+CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/i2c.c \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/i2c.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/main.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/stm32f1xx_hal_conf.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_compiler.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_gcc.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_version.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/core_cm3.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
 
 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/main.c \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/gpio.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/main.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/stm32f1xx_hal_conf.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/usart.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
@@ -55,10 +85,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj: /home/caincil/Project/Serv
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/include/newlib/_ansi.h \
   /usr/include/newlib/_newlib_version.h \
@@ -67,9 +97,6 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj: /home/caincil/Project/Serv
   /usr/include/newlib/machine/ieeefp.h \
   /usr/include/newlib/newlib.h \
   /usr/include/newlib/stdio.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/_locale.h \
   /usr/include/newlib/sys/_types.h \
   /usr/include/newlib/sys/cdefs.h \
   /usr/include/newlib/sys/config.h \
@@ -77,38 +104,7 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj: /home/caincil/Project/Serv
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
   /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/sys/string.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
-  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
-
-CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/spi.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/spi.c \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/main.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/spi.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/stm32f1xx_hal_conf.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_compiler.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_gcc.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_version.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/core_cm3.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
 
@@ -133,10 +129,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: /home/caincil
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -163,10 +159,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj: /home/caincil/Proj
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -254,10 +250,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj: /home/caincil/
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -284,10 +280,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj: /home/caincil/Project/Ser
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -312,10 +308,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -340,10 +336,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -368,10 +364,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -396,10 +392,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -424,10 +420,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -452,10 +448,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -480,10 +476,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -508,10 +504,38 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
+
+CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/stm32f1xx_hal_conf.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_compiler.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_gcc.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_version.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/core_cm3.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -536,10 +560,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -564,10 +588,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -592,38 +616,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
-  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
-
-CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/stm32f1xx_hal_conf.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_compiler.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_gcc.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_version.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/core_cm3.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -648,10 +644,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -676,10 +672,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -704,10 +700,10 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
-  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
@@ -715,11 +711,11 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c:
 
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:
-
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c:
 
@@ -741,23 +737,19 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 /usr/include/newlib/sys/time.h:
 
-/usr/include/newlib/sys/errno.h:
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c:
+
+/usr/include/newlib/sys/stat.h:
 
 /usr/include/newlib/sys/_timespec.h:
+
+/usr/include/newlib/sys/_stdint.h:
 
 /usr/include/newlib/sys/_sigset.h:
 
 /usr/include/newlib/stdlib.h:
 
 /usr/include/newlib/machine/types.h:
-
-/usr/include/newlib/sys/sched.h:
-
-/usr/include/newlib/machine/stdlib.h:
-
-/usr/include/newlib/machine/endian.h:
-
-/usr/include/newlib/machine/_time.h:
 
 /usr/include/newlib/sys/_pthreadtypes.h:
 
@@ -772,6 +764,8 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 /usr/include/newlib/sys/select.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h:
+
+/usr/include/newlib/machine/endian.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h:
 
@@ -795,19 +789,17 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h:
 
-/usr/include/newlib/string.h:
+/usr/include/newlib/sys/_locale.h:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_gcc.h:
 
 /usr/include/newlib/sys/_timeval.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h:
 
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_gcc.h:
-
-/usr/include/newlib/sys/_locale.h:
-
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h:
+/usr/include/newlib/_newlib_version.h:
 
 /usr/include/newlib/machine/ieeefp.h:
 
@@ -821,6 +813,8 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 /usr/include/newlib/sys/lock.h:
 
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h:
+
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h:
 
 /usr/include/newlib/alloca.h:
@@ -828,10 +822,6 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
-
-/usr/include/newlib/machine/time.h:
-
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_version.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/syscalls.c:
 
@@ -855,13 +845,15 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/core_cm3.h:
 
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/main.c:
+/usr/include/newlib/sys/errno.h:
 
-/usr/include/newlib/_newlib_version.h:
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/i2c.c:
 
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/spi.h:
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/i2c.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/usart.h:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/main.c:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c:
 
@@ -873,7 +865,9 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 /usr/include/newlib/stdio.h:
 
-/usr/include/newlib/strings.h:
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_version.h:
+
+/usr/include/newlib/machine/time.h:
 
 /usr/include/newlib/sys/_types.h:
 
@@ -885,28 +879,24 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 /usr/include/newlib/sys/config.h:
 
-/usr/include/newlib/sys/_stdint.h:
-
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/spi.c:
-
 /usr/include/newlib/sys/reent.h:
 
 /usr/include/newlib/sys/signal.h:
 
 /usr/include/newlib/sys/stdio.h:
 
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c:
-
-/usr/include/newlib/sys/stat.h:
-
-/usr/include/newlib/sys/string.h:
-
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
-
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/stm32f1xx_it.h:
-
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/stm32f1xx_hal_msp.c:
 
 /usr/include/newlib/sys/features.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/stm32f1xx_it.c:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/stm32f1xx_it.h:
+
+/usr/include/newlib/machine/_time.h:
+
+/usr/include/newlib/sys/sched.h:
+
+/usr/include/newlib/machine/stdlib.h:

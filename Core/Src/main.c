@@ -1,4 +1,4 @@
-#/* USER CODE BEGIN Header */
+/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * @file           : main.c
@@ -18,12 +18,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "spi.h"
+#include "i2c.h"
 #include "usart.h"
 #include "gpio.h"
 #include <stdio.h>
-#include <string.h>
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -31,8 +29,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-#define MPU6050_ADDR 0x68
-#define ACCEL_XOUT_H 0x3B
+#define MPU6050_ADDRESS 0x68 << 1 // MPU6050 I2C address (shifted for HAL)
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -54,12 +51,7 @@ extern UART_HandleTypeDef huart2;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-void MPU6050_Init(void);
-void MPU6050_ReadAccel(int16_t *accelX, int16_t *accelY, int16_t *accelZ);
-void MPU6050_Write(uint8_t reg, uint8_t data);
-uint8_t MPU6050_Read(uint8_t reg);
-void send_accel_data_over_uart(int16_t accelX, int16_t accelY, int16_t accelZ);
-
+HAL_StatusTypeDef checkMPU6050Connection(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -96,12 +88,16 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_SPI2_Init();
   MX_USART2_UART_Init();
-  MPU6050_Init();
+  MX_I2C1_Init();
+
   /* USER CODE BEGIN 2 */
-  int16_t accelX, accelY, accelZ;
-  char buffer[64];
+      if (checkMPU6050Connection() == HAL_OK) {
+        printf("MPU-6050 connected successfully.\r\n");
+    } else {
+        printf("Failed to connect to MPU-6050.\r\n");
+    }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -109,16 +105,11 @@ int main(void)
   while (1)
   {
     // TODO: 
+    
     /* USER CODE END WHILE */
+  
     /* USER CODE BEGIN 3 */
-      // Read accelerometer data
-    MPU6050_ReadAccel(&accelX, &accelY, &accelZ);
-
-    // Send accelerometer data over UART
-    send_accel_data_over_uart(accelX, accelY, accelZ);
-
-    // Wait for a short period
-    HAL_Delay(500);
+      
   }
   /* USER CODE END 3 */
 }
@@ -135,11 +126,12 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI_DIV2;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
@@ -152,124 +144,31 @@ void SystemClock_Config(void)
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     Error_Handler();
   }
 }
 
 /* USER CODE BEGIN 4 */
-/* MPU6050 Initialization Function */
-void MPU6050_Init(void)
-{
-    // Wake up the MPU6050 by writing 0 to the power management register
-    MPU6050_Write(0x6B, 0x00);
-
-    // Set accelerometer configuration (e.g., ±2g range)
-    MPU6050_Write(0x1C, 0x00);
-
-    // Set gyroscope configuration (e.g., ±250°/s range)
-    MPU6050_Write(0x1B, 0x00);
-}
-
-/* Function to Read Accelerometer Data */
-void MPU6050_ReadAccel(int16_t *accelX, int16_t *accelY, int16_t *accelZ)
-{
-    uint8_t data[6];
-
-    /* Read 6 bytes of accelerometer data starting from ACCEL_XOUT_H */
+HAL_StatusTypeDef checkMPU6050Connection(void) {
+    uint8_t check;
+    HAL_StatusTypeDef result;
     
-    uint8_t reg = ACCEL_XOUT_H | 0x80; // Set MSB to 1 for read operation
-    HAL_SPI_Transmit(&hspi2, &reg, 1, HAL_MAX_DELAY);
-    HAL_SPI_Receive(&hspi2, data, 6, HAL_MAX_DELAY);
+    // Read WHO_AM_I register (0x75) to check the device identity
+    result = HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDRESS, 0x75, 1, &check, 1, 1000);
     
-
-    /* Combine the high and low bytes to form the 16-bit accelerometer values */
-    *accelX = (int16_t)(data[0] << 8 | data[1]);
-    *accelY = (int16_t)(data[2] << 8 | data[3]);
-    *accelZ = (int16_t)(data[4] << 8 | data[5]);
-}
-
-/* Function to Write to MPU6050 Register */
-void MPU6050_Write(uint8_t reg, uint8_t data)
-{
-    
-    uint8_t txData[2] = {reg, data};
-    HAL_SPI_Transmit(&hspi2, txData, 2, HAL_MAX_DELAY);
-    
-}
-
-/* Function to Read from MPU6050 Register */
-uint8_t MPU6050_Read(uint8_t reg)
-{
-    
-    uint8_t txData = reg | 0x80; // Set MSB to 1 for read operation
-    uint8_t rxData;
-    HAL_SPI_Transmit(&hspi2, &txData, 1, HAL_MAX_DELAY);
-    HAL_SPI_Receive(&hspi2, &rxData, 1, HAL_MAX_DELAY);
-    
-    return rxData;
-}
-
-void int16_to_str(int16_t num, char* str) {
-    char temp[7];  // Temporary buffer (6 digits max for int16_t + sign + null terminator)
-    int i = 0;
-    int is_negative = 0;
-
-    // Handle negative numbers
-    if (num < 0) {
-        is_negative = 1;
-        num = -num;
+    // The default value of WHO_AM_I register for MPU-6050 is 0x68
+    if (result == HAL_OK && check == 0x68) {
+        return HAL_OK; // Device is connected
+    } else {
+        return HAL_ERROR; // Device is not connected
     }
-
-    // Process number
-    do {
-        temp[i++] = (num % 10) + '0';  // Get the last digit and convert to character
-        num /= 10;
-    } while (num > 0);
-
-    // If the number was negative, add the '-' sign
-    if (is_negative) {
-        temp[i++] = '-';
-    }
-
-    // Reverse the string since digits are in reverse order
-    int j = 0;
-    while (i > 0) {
-        str[j++] = temp[--i];
-    }
-
-    str[j] = '\0';  // Null-terminate the string
 }
 
-
-// Function to send accelerometer data over UART
-void send_accel_data_over_uart(int16_t accelX, int16_t accelY, int16_t accelZ) {
-    char buffer[100] = "Accel X: ";
-    char x_str[7], y_str[7], z_str[7];  // Buffers to hold string representations of accel data
-    char y_label[] = ", Y: ";
-    char z_label[] = ", Z: ";
-    char newline[] = "\r\n";
-
-    // Convert the accelerometer values to strings
-    int16_to_str(accelX, x_str);
-    int16_to_str(accelY, y_str);
-    int16_to_str(accelZ, z_str);
-
-    // Concatenate the strings together to form the complete message
-    strcat(buffer, x_str);
-    strcat(buffer, y_label);
-    strcat(buffer, y_str);
-    strcat(buffer, z_label);
-    strcat(buffer, z_str);
-    strcat(buffer, newline);
-
-    // Transmit the formatted string over UART
-    HAL_UART_Transmit(&huart2, (uint8_t*)buffer, sizeof(buffer)-1 , 1000);
-}
 /* USER CODE END 4 */
 
 /**

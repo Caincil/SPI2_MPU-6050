@@ -1,5 +1,6 @@
-CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: \
- /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/stm32f1xx_hal_msp.c \
+CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj: \
+ /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/i2c.c \
+ /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/i2c.h \
  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/main.h \
  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/stm32f1xx_hal_conf.h \
