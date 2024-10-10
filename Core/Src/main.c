@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+#/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * @file           : main.c
@@ -21,6 +21,8 @@
 #include "spi.h"
 #include "usart.h"
 #include "gpio.h"
+#include <stdio.h>
+#include <string.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -30,8 +32,7 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 #define MPU6050_ADDR 0x68
-#define WHO_AM_I_REG 0x75
-#define PWR_MGMT_1_REG 0x6B
+#define ACCEL_XOUT_H 0x3B
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -47,16 +48,17 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+extern UART_HandleTypeDef huart2;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 void MPU6050_Init(void);
-uint8_t MPU6050_ReadWhoAmI(void);
+void MPU6050_ReadAccel(int16_t *accelX, int16_t *accelY, int16_t *accelZ);
 void MPU6050_Write(uint8_t reg, uint8_t data);
 uint8_t MPU6050_Read(uint8_t reg);
+void send_accel_data_over_uart(int16_t accelX, int16_t accelY, int16_t accelZ);
 
 /* USER CODE END PFP */
 
@@ -82,7 +84,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+   
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -97,22 +99,26 @@ int main(void)
   MX_SPI2_Init();
   MX_USART2_UART_Init();
   MPU6050_Init();
-
   /* USER CODE BEGIN 2 */
-  uint8_t who_am_i = MPU6050_ReadWhoAmI();
-    if (who_am_i == 0x68) {
-        // Successfully connected
-        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13); // Toggle LED to indicate success
-    }
+  int16_t accelX, accelY, accelZ;
+  char buffer[64];
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    // TODO: 
     /* USER CODE END WHILE */
-     HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
+      // Read accelerometer data
+    MPU6050_ReadAccel(&accelX, &accelY, &accelZ);
+
+    // Send accelerometer data over UART
+    send_accel_data_over_uart(accelX, accelY, accelZ);
+
+    // Wait for a short period
+    HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }
@@ -156,41 +162,114 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
 /* MPU6050 Initialization Function */
 void MPU6050_Init(void)
 {
     // Wake up the MPU6050 by writing 0 to the power management register
-    MPU6050_Write(PWR_MGMT_1_REG, 0x00);
+    MPU6050_Write(0x6B, 0x00);
+
+    // Set accelerometer configuration (e.g., ±2g range)
+    MPU6050_Write(0x1C, 0x00);
+
+    // Set gyroscope configuration (e.g., ±250°/s range)
+    MPU6050_Write(0x1B, 0x00);
+}
+
+/* Function to Read Accelerometer Data */
+void MPU6050_ReadAccel(int16_t *accelX, int16_t *accelY, int16_t *accelZ)
+{
+    uint8_t data[6];
+
+    /* Read 6 bytes of accelerometer data starting from ACCEL_XOUT_H */
+    
+    uint8_t reg = ACCEL_XOUT_H | 0x80; // Set MSB to 1 for read operation
+    HAL_SPI_Transmit(&hspi2, &reg, 1, HAL_MAX_DELAY);
+    HAL_SPI_Receive(&hspi2, data, 6, HAL_MAX_DELAY);
+    
+
+    /* Combine the high and low bytes to form the 16-bit accelerometer values */
+    *accelX = (int16_t)(data[0] << 8 | data[1]);
+    *accelY = (int16_t)(data[2] << 8 | data[3]);
+    *accelZ = (int16_t)(data[4] << 8 | data[5]);
 }
 
 /* Function to Write to MPU6050 Register */
 void MPU6050_Write(uint8_t reg, uint8_t data)
 {
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_RESET); // NSS low
+    
     uint8_t txData[2] = {reg, data};
     HAL_SPI_Transmit(&hspi2, txData, 2, HAL_MAX_DELAY);
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET); // NSS high
+    
 }
 
 /* Function to Read from MPU6050 Register */
 uint8_t MPU6050_Read(uint8_t reg)
 {
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_RESET); // NSS low
+    
     uint8_t txData = reg | 0x80; // Set MSB to 1 for read operation
     uint8_t rxData;
     HAL_SPI_Transmit(&hspi2, &txData, 1, HAL_MAX_DELAY);
     HAL_SPI_Receive(&hspi2, &rxData, 1, HAL_MAX_DELAY);
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET); // NSS high
+    
     return rxData;
 }
 
-/* Function to Read the WHO_AM_I Register */
-uint8_t MPU6050_ReadWhoAmI(void)
-{
-    return MPU6050_Read(WHO_AM_I_REG);
+void int16_to_str(int16_t num, char* str) {
+    char temp[7];  // Temporary buffer (6 digits max for int16_t + sign + null terminator)
+    int i = 0;
+    int is_negative = 0;
+
+    // Handle negative numbers
+    if (num < 0) {
+        is_negative = 1;
+        num = -num;
+    }
+
+    // Process number
+    do {
+        temp[i++] = (num % 10) + '0';  // Get the last digit and convert to character
+        num /= 10;
+    } while (num > 0);
+
+    // If the number was negative, add the '-' sign
+    if (is_negative) {
+        temp[i++] = '-';
+    }
+
+    // Reverse the string since digits are in reverse order
+    int j = 0;
+    while (i > 0) {
+        str[j++] = temp[--i];
+    }
+
+    str[j] = '\0';  // Null-terminate the string
 }
 
+
+// Function to send accelerometer data over UART
+void send_accel_data_over_uart(int16_t accelX, int16_t accelY, int16_t accelZ) {
+    char buffer[100] = "Accel X: ";
+    char x_str[7], y_str[7], z_str[7];  // Buffers to hold string representations of accel data
+    char y_label[] = ", Y: ";
+    char z_label[] = ", Z: ";
+    char newline[] = "\r\n";
+
+    // Convert the accelerometer values to strings
+    int16_to_str(accelX, x_str);
+    int16_to_str(accelY, y_str);
+    int16_to_str(accelZ, z_str);
+
+    // Concatenate the strings together to form the complete message
+    strcat(buffer, x_str);
+    strcat(buffer, y_label);
+    strcat(buffer, y_str);
+    strcat(buffer, z_label);
+    strcat(buffer, z_str);
+    strcat(buffer, newline);
+
+    // Transmit the formatted string over UART
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer, sizeof(buffer)-1 , 1000);
+}
 /* USER CODE END 4 */
 
 /**

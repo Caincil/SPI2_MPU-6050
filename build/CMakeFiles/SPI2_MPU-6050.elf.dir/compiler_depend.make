@@ -60,6 +60,25 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj: /home/caincil/Project/Serv
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
   /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/stdio.h \
+  /usr/include/newlib/string.h \
+  /usr/include/newlib/strings.h \
+  /usr/include/newlib/sys/_locale.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/sys/stdio.h \
+  /usr/include/newlib/sys/string.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
 
@@ -712,8 +731,6 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/sysmem.c:
 
-/usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h:
-
 /usr/include/newlib/time.h:
 
 /usr/include/newlib/sys/types.h:
@@ -724,33 +741,31 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 /usr/include/newlib/sys/time.h:
 
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c:
-
-/usr/include/newlib/sys/stat.h:
-
-/usr/include/newlib/sys/stdio.h:
-
-/usr/include/newlib/sys/signal.h:
-
-/usr/include/newlib/sys/reent.h:
-
-/usr/include/newlib/sys/lock.h:
-
 /usr/include/newlib/sys/errno.h:
 
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/system_stm32f1xx.c:
+/usr/include/newlib/sys/_timespec.h:
 
-/usr/include/newlib/sys/config.h:
+/usr/include/newlib/sys/_sigset.h:
 
-/usr/include/newlib/sys/_types.h:
+/usr/include/newlib/stdlib.h:
 
 /usr/include/newlib/machine/types.h:
+
+/usr/include/newlib/sys/sched.h:
+
+/usr/include/newlib/machine/stdlib.h:
+
+/usr/include/newlib/machine/endian.h:
+
+/usr/include/newlib/machine/_time.h:
+
+/usr/include/newlib/sys/_pthreadtypes.h:
+
+/usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/main.h:
-
-/usr/include/newlib/sys/_sigset.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
 
@@ -758,9 +773,11 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h:
 
-/usr/include/newlib/machine/endian.h:
-
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h:
+
+/usr/include/newlib/signal.h:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h:
 
@@ -777,6 +794,8 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/gpio.c:
 
 /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h:
+
+/usr/include/newlib/string.h:
 
 /usr/include/newlib/sys/_timeval.h:
 
@@ -796,23 +815,23 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_compiler.h:
 
-/usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h:
-
-/usr/include/newlib/sys/_pthreadtypes.h:
-
-/usr/include/newlib/sys/cdefs.h:
-
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/stm32f1xx_hal_conf.h:
-
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c:
 
 /usr/include/newlib/machine/_types.h:
+
+/usr/include/newlib/sys/lock.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h:
 
 /usr/include/newlib/alloca.h:
 
+/usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h:
+
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
+
+/usr/include/newlib/machine/time.h:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_version.h:
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/syscalls.c:
 
@@ -844,44 +863,50 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/usart.h:
 
-/usr/include/newlib/sys/_timespec.h:
-
-/usr/include/newlib/sys/_stdint.h:
-
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/spi.c:
-
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/stm32f1xx_hal_msp.c:
-
-/usr/include/newlib/sys/features.h:
-
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/stm32f1xx_it.c:
-
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
-
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/stm32f1xx_it.h:
-
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c:
 
 /usr/include/newlib/_ansi.h:
 
 /usr/include/newlib/machine/_default_types.h:
 
-/usr/include/newlib/machine/_time.h:
-
-/usr/include/newlib/sys/sched.h:
-
-/usr/include/newlib/machine/stdlib.h:
-
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/CMSIS/Include/cmsis_version.h:
-
-/usr/include/newlib/machine/time.h:
-
 /home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 
 /usr/include/newlib/stdio.h:
 
-/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:
+/usr/include/newlib/strings.h:
 
-/usr/include/newlib/signal.h:
+/usr/include/newlib/sys/_types.h:
 
-/usr/include/newlib/stdlib.h:
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/stm32f1xx_hal_conf.h:
+
+/usr/include/newlib/sys/cdefs.h:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/system_stm32f1xx.c:
+
+/usr/include/newlib/sys/config.h:
+
+/usr/include/newlib/sys/_stdint.h:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/spi.c:
+
+/usr/include/newlib/sys/reent.h:
+
+/usr/include/newlib/sys/signal.h:
+
+/usr/include/newlib/sys/stdio.h:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c:
+
+/usr/include/newlib/sys/stat.h:
+
+/usr/include/newlib/sys/string.h:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Inc/stm32f1xx_it.h:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/stm32f1xx_hal_msp.c:
+
+/usr/include/newlib/sys/features.h:
+
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/Core/Src/stm32f1xx_it.c:
