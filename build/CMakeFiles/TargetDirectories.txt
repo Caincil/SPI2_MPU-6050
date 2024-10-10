@@ -1,0 +1,3 @@
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles/SPI2_MPU-6050.elf.dir
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles/edit_cache.dir
+/home/caincil/Project/Servo_PWM/SPI2_MPU-6050/build/CMakeFiles/rebuild_cache.dir
