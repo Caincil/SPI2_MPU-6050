@@ -60,15 +60,18 @@ void MX_GPIO_Init(void)
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-     GPIO_InitStruct.Pin = GPIO_PIN_2 | GPIO_PIN_3;
-    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;  // Push-pull for UART
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+    /*Configure GPIO pin : PA2 (USART2_TX) */
+  GPIO_InitStruct.Pin = GPIO_PIN_2;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-       /* Configure alternate function mappings */
-    __HAL_AFIO_REMAP_I2C1_ENABLE();   // Remap I2C1 pins
-    __HAL_AFIO_REMAP_USART2_ENABLE(); // Remap USART2 pins
+  /*Configure GPIO pin : PA3 (USART2_RX) */
+  GPIO_InitStruct.Pin = GPIO_PIN_3;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+    
 
   /*Configure GPIO pin : PtPin */
   GPIO_InitStruct.Pin = B1_Pin;
