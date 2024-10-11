@@ -55,10 +55,9 @@
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 void MPU6050_Init(void);
-void MPU6050_Read_Accel(int16_t* accel_data);
-void UART_Send_Data(int16_t* accel_data);
-void IntToStr(int16_t value, char* buffer);
-void MPU6050_TestConnection(void);
+void MPU6050_Read_Accel(int16_t* accel_data, int16_t* gyro_data);
+void UART_Send_Accel_Data(int16_t* accel_data, int16_t* gyro_data);
+int IntToStr(int16_t value, char* buffer);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -100,9 +99,7 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
   MPU6050_Init();
-  // HAL_UART_Transmit(&huart2, (uint8_t *)"Hello, World!\r\n", 15, HAL_MAX_DELAY);
-  
-  int16_t accel_data[3];
+  int16_t accel_data[3], gyro_data[3];
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -110,13 +107,13 @@ int main(void)
   while (1)
   {
     // Read accelerometer data
-    // MPU6050_Read_Accel(accel_data);
+    MPU6050_Read_Accel(accel_data, gyro_data);
         
     // Send accelerometer data to Serial Monitor
-    // UART_Send_Data(accel_data);
-    MPU6050_TestConnection();    
+    UART_Send_Accel_Data(accel_data, gyro_data);
+        
     // Small delay
-    HAL_Delay(500);
+    HAL_Delay(100);
     /* USER CODE BEGIN 3 */
       
   }
@@ -169,68 +166,122 @@ void MPU6050_Init(void) {
     
     // Wake up the MPU-6050 (clear sleep mode bit 6 in register PWR_MGMT_1)
     data = 0;
-    HAL_I2C_Mem_Write(&hi2c1, MPU6050_ADDRESS, PWR_MGMT_1_REG, 1, &data, 1, 1000);
+    HAL_I2C_Mem_Write(&hi2c1, MPU6050_ADDRESS, PWR_MGMT_1_REG, 1, &data, 1, 100);
 }
 
-void MPU6050_Read_Accel(int16_t* accel_data) {
-    uint8_t data[6];
+void MPU6050_Read_Accel(int16_t* accel_data, int16_t* gyro_data) {
+    uint8_t data[14];
     
     // Read 6 bytes starting from ACCEL_XOUT_H (accelerometer data)
-    HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDRESS, ACCEL_XOUT_H, 1, data, 6, 1000);
+    HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDRESS, ACCEL_XOUT_H, 1, data, 6, 100);
     
     // Combine high and low bytes for accelerometer
     accel_data[0] = (int16_t)(data[0] << 8 | data[1]); // Accel X
     accel_data[1] = (int16_t)(data[2] << 8 | data[3]); // Accel Y
     accel_data[2] = (int16_t)(data[4] << 8 | data[5]); // Accel Z
+
+     // Combine high and low bytes for gyroscope
+    gyro_data[0] = (int16_t)(data[8] << 8 | data[9]); // Gyro X
+    gyro_data[1] = (int16_t)(data[10] << 8 | data[11]); // Gyro Y
+    gyro_data[2] = (int16_t)(data[12] << 8 | data[13]); // Gyro Z
 }
 
-void UART_Send_Data(int16_t* accel_data) {
-    char buffer[20]; // Buffer to hold the string representation
-    char message[60] = "Accel X="; // Message prefix for X
+void UART_Send_Accel_Data(int16_t* accel_data, int16_t* gyro_data) {
+    char buffer[100]; // Buffer to hold the message
+    int index = 0;
 
-    // Convert accel_data[0] (X-axis) to string and append to message
-    IntToStr(accel_data[0], buffer);
-    strcat(message, buffer);
-    strcat(message, ", Y=");
+    // Add "Accel X="
+    buffer[index++] = 'A';
+    buffer[index++] = 'c';
+    buffer[index++] = 'c';
+    buffer[index++] = 'e';
+    buffer[index++] = 'l';
+    buffer[index++] = ' ';
+    buffer[index++] = 'X';
+    buffer[index++] = '=';
 
-    // Convert accel_data[1] (Y-axis) to string and append to message
-    IntToStr(accel_data[1], buffer);
-    strcat(message, buffer);
-    strcat(message, ", Z=");
+    // Convert accel_data[0] (X-axis) to string and add to buffer
+    index += IntToStr(accel_data[0], &buffer[index]);
 
-    // Convert accel_data[2] (Z-axis) to string and append to message
-    IntToStr(accel_data[2], buffer);
-    strcat(message, buffer);
-    strcat(message, "\r\n");
+    // Add ", Y="
+    buffer[index++] = ',';
+    buffer[index++] = ' ';
+    buffer[index++] = 'Y';
+    buffer[index++] = '=';
 
-    // Send the formatted string over UART
-    HAL_UART_Transmit(&huart2, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+    // Convert accel_data[1] (Y-axis) to string and add to buffer
+    index += IntToStr(accel_data[1], &buffer[index]);
+
+    // Add ", Z="
+    buffer[index++] = ',';
+    buffer[index++] = ' ';
+    buffer[index++] = 'Z';
+    buffer[index++] = '=';
+
+    // Convert accel_data[2] (Z-axis) to string and add to buffer
+    index += IntToStr(accel_data[2], &buffer[index]);
+
+     // Add " | Gyro X="
+    buffer[index++] = ' ';
+    buffer[index++] = '|';
+    buffer[index++] = ' ';
+    buffer[index++] = 'G';
+    buffer[index++] = 'y';
+    buffer[index++] = 'r';
+    buffer[index++] = 'o';
+    buffer[index++] = ' ';
+    buffer[index++] = 'X';
+    buffer[index++] = '=';
+
+    // Convert gyro_data[0] (X-axis) to string and add to buffer
+    index += IntToStr(gyro_data[0], &buffer[index]);
+
+    // Add ", Y="
+    buffer[index++] = ',';
+    buffer[index++] = ' ';
+    buffer[index++] = 'Y';
+    buffer[index++] = '=';
+
+    // Convert gyro_data[1] (Y-axis) to string and add to buffer
+    index += IntToStr(gyro_data[1], &buffer[index]);
+
+    // Add ", Z="
+    buffer[index++] = ',';
+    buffer[index++] = ' ';
+    buffer[index++] = 'Z';
+    buffer[index++] = '=';
+
+    // Convert gyro_data[2] (Z-axis) to string and add to buffer
+    index += IntToStr(gyro_data[2], &buffer[index]);
+
+    // Add "\r\n"
+    buffer[index++] = '\r';
+    buffer[index++] = '\n';
+
+    // Transmit the constructed message over UART
+    HAL_UART_Transmit(&huart2, (uint8_t *)buffer, index, HAL_MAX_DELAY);
 }
 
-void IntToStr(int16_t value, char* buffer) {
-    // Convert integer to string manually
+int IntToStr(int16_t value, char* buffer) {
     int isNegative = 0;
     int i = 0;
 
     // Handle negative numbers
     if (value < 0) {
         isNegative = 1;
-        value = -value; // Make the value positive
+        value = -value;
     }
 
-    // Convert the integer to string (reverse order)
+    // Convert the integer to string in reverse order
     do {
-        buffer[i++] = (value % 10) + '0'; // Get the last digit and convert to character
+        buffer[i++] = (value % 10) + '0';
         value /= 10;
     } while (value > 0);
 
-    // Add negative sign if necessary
+    // Add negative sign if needed
     if (isNegative) {
         buffer[i++] = '-';
     }
-
-    // Null-terminate the string
-    buffer[i] = '\0';
 
     // Reverse the string to get the correct order
     int start = 0;
@@ -242,41 +293,10 @@ void IntToStr(int16_t value, char* buffer) {
         start++;
         end--;
     }
+
+    // Return the length of the string
+    return i;
 }
-
-void MPU6050_TestConnection(void) {
-    uint8_t who_am_i = 0;
-    // Read the WHO_AM_I register (0x75), which should return 0x68
-    HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDRESS, 0x75, 1, &who_am_i, 1, 1000);
-    
-    // Manually construct the message
-    char buffer[20];
-    buffer[0] = 'W';
-    buffer[1] = 'H';
-    buffer[2] = 'O';
-    buffer[3] = '_';
-    buffer[4] = 'A';
-    buffer[5] = 'M';
-    buffer[6] = '_';
-    buffer[7] = 'I';
-    buffer[8] = ':';
-    buffer[9] = ' ';
-    
-    // Convert the hexadecimal value to characters
-    uint8_t high_nibble = (who_am_i >> 4) & 0x0F;
-    uint8_t low_nibble = who_am_i & 0x0F;
-    
-    buffer[10] = (high_nibble < 10) ? ('0' + high_nibble) : ('A' + high_nibble - 10);
-    buffer[11] = (low_nibble < 10) ? ('0' + low_nibble) : ('A' + low_nibble - 10);
-    
-    buffer[12] = '\r';
-    buffer[13] = '\n';
-    
-    // Transmit the message over UART
-    HAL_UART_Transmit(&huart2, (uint8_t *)buffer, 14, HAL_MAX_DELAY);
-}
-
-
 
 /* USER CODE END 4 */
 
