@@ -41,4 +41,5 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj: \
  /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
  /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/stdio.h \
  /usr/include/newlib/string.h /usr/include/newlib/sys/_locale.h \
- /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h
+ /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h \
+ /usr/include/newlib/math.h

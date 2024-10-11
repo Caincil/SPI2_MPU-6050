@@ -23,6 +23,7 @@
 #include "gpio.h"
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -33,6 +34,7 @@
 #define MPU6050_ADDRESS 0x68 << 1 // MPU-6050 I2C address
 #define PWR_MGMT_1_REG 0x6B
 #define ACCEL_XOUT_H 0x3B
+#define _USE_MATH_DEFINES
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -56,8 +58,10 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 void MPU6050_Init(void);
 void MPU6050_Read_Accel(int16_t* accel_data, int16_t* gyro_data);
-void UART_Send_Accel_Data(int16_t* accel_data, int16_t* gyro_data);
+void UART_Send_Angles(float pitch, float roll, float yaw);
+void Calculate_Angles(int16_t* accel_data, int16_t* gyro_data, float* pitch, float* roll, float* yaw);
 int IntToStr(int16_t value, char* buffer);
+int FloatToStr(float value, char* buffer);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -100,6 +104,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   MPU6050_Init();
   int16_t accel_data[3], gyro_data[3];
+  float pitch = 0.0f, roll = 0.0f, yaw = 0.0f;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -108,9 +113,12 @@ int main(void)
   {
     // Read accelerometer data
     MPU6050_Read_Accel(accel_data, gyro_data);
-        
+
+    // Calculate pitch, roll, and yaw
+    Calculate_Angles(accel_data, gyro_data, &pitch, &roll, &yaw);
+    
     // Send accelerometer data to Serial Monitor
-    UART_Send_Accel_Data(accel_data, gyro_data);
+    UART_Send_Angles(pitch, roll, yaw);
         
     // Small delay
     HAL_Delay(100);
@@ -186,7 +194,69 @@ void MPU6050_Read_Accel(int16_t* accel_data, int16_t* gyro_data) {
     gyro_data[2] = (int16_t)(data[12] << 8 | data[13]); // Gyro Z
 }
 
-void UART_Send_Accel_Data(int16_t* accel_data, int16_t* gyro_data) {
+void Calculate_Angles(int16_t* accel_data, int16_t* gyro_data, float* pitch, float* roll, float* yaw)
+{
+    // Convert accelerometer data to angles
+    float accel_x = accel_data[0] / 16384.0f; // Convert to g
+    float accel_y = accel_data[1] / 16384.0f; // Convert to g
+    float accel_z = accel_data[2] / 16384.0f; // Convert to g
+
+    // Calculate pitch and roll from accelerometer
+    *pitch = atan2(accel_y, accel_z) * 180 / 3.14159265358979323846;
+    *roll = atan2(-accel_x, sqrt(accel_y * accel_y + accel_z * accel_z)) * 180 / 3.14159265358979323846;
+
+    // Integrate gyroscope data for yaw calculation (gyro data in degrees per second)
+    static uint32_t last_time = 0;
+    uint32_t current_time = HAL_GetTick();
+    float dt = (current_time - last_time) / 1000.0f; // Delta time in seconds
+    last_time = current_time;
+
+    float gyro_rate_z = gyro_data[2] / 131.0f; // Convert to degrees/sec
+    *yaw += gyro_rate_z * dt; // Integrate to get yaw
+}
+
+void UART_Send_Angles(float pitch, float roll, float yaw) {
+    char buffer[100];
+    int index = 0;
+
+    // Add "Pitch: "
+    const char* pitch_label = "Pitch: ";
+    for (int i = 0; pitch_label[i] != '\0'; i++) {
+        buffer[index++] = pitch_label[i];
+    }
+
+    // Convert pitch to string and add to buffer
+    index += FloatToStr(pitch, &buffer[index]);
+
+    // Add ", Roll: "
+    const char* roll_label = ", Roll: ";
+    for (int i = 0; roll_label[i] != '\0'; i++) {
+        buffer[index++] = roll_label[i];
+    }
+
+    // Convert roll to string and add to buffer
+    index += FloatToStr(roll, &buffer[index]);
+
+    // Add ", Yaw: "
+    const char* yaw_label = ", Yaw: ";
+    for (int i = 0; yaw_label[i] != '\0'; i++) {
+        buffer[index++] = yaw_label[i];
+    }
+
+    // Convert yaw to string and add to buffer
+    index += FloatToStr(yaw, &buffer[index]);
+
+    // Add "\r\n"
+    buffer[index++] = '\r';
+    buffer[index++] = '\n';
+
+    // Transmit the constructed message over UART
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer, index, HAL_MAX_DELAY);
+}
+
+
+//TODO:  
+/*void UART_Send_Accel_Data(int16_t* accel_data, int16_t* gyro_data) {
     char buffer[100]; // Buffer to hold the message
     int index = 0;
 
@@ -261,10 +331,11 @@ void UART_Send_Accel_Data(int16_t* accel_data, int16_t* gyro_data) {
     // Transmit the constructed message over UART
     HAL_UART_Transmit(&huart2, (uint8_t *)buffer, index, HAL_MAX_DELAY);
 }
+*/
 
-int IntToStr(int16_t value, char* buffer) {
-    int isNegative = 0;
+int FloatToStr(float value, char* buffer) {
     int i = 0;
+    int isNegative = 0;
 
     // Handle negative numbers
     if (value < 0) {
@@ -272,7 +343,49 @@ int IntToStr(int16_t value, char* buffer) {
         value = -value;
     }
 
-    // Convert the integer to string in reverse order
+    // Convert the integer part
+    int int_part = (int)value;
+    float decimal_part = value - int_part;
+
+    // Convert the integer part to a string
+    i += IntToStr(int_part, &buffer[i]);
+
+    // Add the decimal point
+    buffer[i++] = '.';
+
+    // Convert the decimal part to two decimal places
+    decimal_part *= 100;
+    int decimal_int = (int)decimal_part;
+    buffer[i++] = (decimal_int / 10) + '0';
+    buffer[i++] = (decimal_int % 10) + '0';
+
+    // Add negative sign if needed
+    if (isNegative) {
+        for (int j = i; j > 0; j--) {
+            buffer[j] = buffer[j - 1];
+        }
+        buffer[0] = '-';
+        i++;
+    }
+
+    // Null-terminate the string
+    buffer[i] = '\0';
+
+    // Return the length of the string
+    return i;
+}
+
+int IntToStr(int16_t value, char* buffer) {
+    int i = 0;
+    int isNegative = 0;
+
+    // Handle negative numbers
+    if (value < 0) {
+        isNegative = 1;
+        value = -value;
+    }
+
+    // Convert the integer to a string (reverse order)
     do {
         buffer[i++] = (value % 10) + '0';
         value /= 10;
@@ -294,9 +407,14 @@ int IntToStr(int16_t value, char* buffer) {
         end--;
     }
 
+    // Null-terminate the string
+    buffer[i] = '\0';
+
     // Return the length of the string
     return i;
 }
+
+
 
 /* USER CODE END 4 */
 

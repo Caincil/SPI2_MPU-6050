@@ -98,6 +98,7 @@ CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
  /usr/include/newlib/machine/_default_types.h
  /usr/include/newlib/machine/_types.h
  /usr/include/newlib/machine/ieeefp.h
+ /usr/include/newlib/math.h
  /usr/include/newlib/newlib.h
  /usr/include/newlib/stdio.h
  /usr/include/newlib/string.h
