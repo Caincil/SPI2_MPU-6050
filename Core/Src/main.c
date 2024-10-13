@@ -125,7 +125,7 @@ int main(void)
     UART_Send_Angles(pitch, roll, yaw);
         
     // Small delay
-    HAL_Delay(50);
+    HAL_Delay(2);
     /* USER CODE BEGIN 3 */
       
   }
@@ -186,8 +186,8 @@ void MPU6050_Calibrate(int16_t* accel_bias, int16_t* gyro_bias) {
     int32_t gyro_sum[3] = {0, 0, 0};
     int16_t accel_data[3], gyro_data[3];
     
-    // Collect 500 samples
-    for (int i = 0; i < 500; i++) {
+    // Collect 200 samples
+    for (int i = 0; i < 200; i++) {
         MPU6050_Read_Accel(accel_data, gyro_data, accel_bias, gyro_bias);
 
         // Sum the readings for bias calculation
@@ -202,12 +202,12 @@ void MPU6050_Calibrate(int16_t* accel_bias, int16_t* gyro_bias) {
     }
 
     // Calculate the average values (biases)
-    accel_bias[0] = accel_sum[0] / 500;
-    accel_bias[1] = accel_sum[1] / 500;
-    accel_bias[2] = accel_sum[2] / 500;
-    gyro_bias[0] = gyro_sum[0] / 500;
-    gyro_bias[1] = gyro_sum[1] / 500;
-    gyro_bias[2] = gyro_sum[2] / 500;
+    accel_bias[0] = accel_sum[0] / 200;
+    accel_bias[1] = accel_sum[1] / 200;
+    accel_bias[2] = accel_sum[2] / 200;
+    gyro_bias[0] = gyro_sum[0] / 200;
+    gyro_bias[1] = gyro_sum[1] / 200;
+    gyro_bias[2] = gyro_sum[2] / 200;
 }
 
 
@@ -228,27 +228,45 @@ void MPU6050_Read_Accel(int16_t* accel_data, int16_t* gyro_data, int16_t* accel_
     gyro_data[2] = (int16_t)(data[12] << 8 | data[13]) - gyro_bias[2]; // Gyro Z
 }
 
-
 void Calculate_Angles(int16_t* accel_data, int16_t* gyro_data, float* pitch, float* roll, float* yaw)
 {
+    // Complementary filter constant (adjust based on performance)
+    const float alpha = 0.98f;
+
     // Convert accelerometer data to angles
     float accel_x = accel_data[0] / 16384.0f; // Convert to g
     float accel_y = accel_data[1] / 16384.0f; // Convert to g
     float accel_z = accel_data[2] / 16384.0f; // Convert to g
 
     // Calculate pitch and roll from accelerometer
-    *pitch = atan2(accel_y, accel_z) * 180 / 3.14159265358979323846;
-    *roll = atan2(-accel_x, sqrt(accel_y * accel_y + accel_z * accel_z)) * 180 / 3.14159265358979323846;
+    float accel_pitch = atan2f(accel_y, accel_z) * 180 / 3.14159265358979323846;
+    float accel_roll = atan2f(-accel_x, sqrtf(accel_y * accel_y + accel_z * accel_z)) * 180 / 3.14159265358979323846;
 
-    // Integrate gyroscope data for yaw calculation (gyro data in degrees per second)
+    // Calculate time delta (in seconds) for gyro integration
     static uint32_t last_time = 0;
     uint32_t current_time = HAL_GetTick();
     float dt = (current_time - last_time) / 1000.0f; // Delta time in seconds
     last_time = current_time;
 
-    float gyro_rate_z = gyro_data[2] / 131.0f; // Convert to degrees/sec
-    *yaw += gyro_rate_z * dt; // Integrate to get yaw
+    // Integrate gyroscope data for pitch and roll (gyro data in degrees per second)
+    float gyro_pitch_rate = gyro_data[0] / 131.0f; // Convert to degrees/sec
+    float gyro_roll_rate = gyro_data[1] / 131.0f;  // Convert to degrees/sec
+    float gyro_yaw_rate = gyro_data[2] / 131.0f;   // Convert to degrees/sec
+
+    // Apply complementary filter for pitch and roll
+    *pitch = alpha * (*pitch + gyro_pitch_rate * dt) + (1.0f - alpha) * accel_pitch;
+    *roll = alpha * (*roll + gyro_roll_rate * dt) + (1.0f - alpha) * accel_roll;
+
+    // Integrate gyroscope data for yaw (no accelerometer data available for yaw)
+    *yaw += gyro_yaw_rate * dt;
+
+    if (*yaw >= 360.0f) {
+        *yaw -= 360.0f;  // If yaw exceeds 360, subtract 360 to wrap around
+    } else if (*yaw < 0.0f) {
+        *yaw += 360.0f;  // If yaw drops below 0, add 360 to wrap around
+    }
 }
+
 
 void UART_Send_Angles(float pitch, float roll, float yaw) {
     char buffer[100];

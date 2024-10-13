@@ -1,17 +1,17 @@
 Archive member included to satisfy reference by file (symbol)
 
-/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
-                              CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj (atan2)
-/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
-                              CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj (sqrt)
-/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
-                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o) (__ieee754_sqrt)
-/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
-                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o) (__ieee754_atan2)
-/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
-                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o) (atan)
-/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
-                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o) (fabs)
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
+                              CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj (sqrtf)
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
+                              CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj (atan2f)
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
+                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o) (__ieee754_atan2f)
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
+                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o) (atanf)
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
+                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o) (fabsf)
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
+                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o) (__ieee754_sqrtf)
 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
                               /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o (memset)
 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
@@ -60,18 +60,12 @@ Archive member included to satisfy reference by file (symbol)
                               /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-stdio.o) (_lseek_r)
 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-reent.o)
                               /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-writer.o) (errno)
-/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
-                              CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj (__aeabi_dmul)
 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_mulsf3.o)
                               CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj (__aeabi_fmul)
 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
-                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o) (__aeabi_dsub)
+                              CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj (__aeabi_f2d)
 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
                               CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj (__aeabi_ddiv)
-/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
-                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o) (__aeabi_dcmplt)
-/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
-                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o) (__aeabi_dcmpun)
 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
                               CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj (__aeabi_d2f)
 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
@@ -80,6 +74,8 @@ Archive member included to satisfy reference by file (symbol)
                               CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj (__aeabi_fdiv)
 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
                               CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj (__aeabi_fcmplt)
+/usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unordsf2.o)
+                              /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o) (__aeabi_fcmpun)
 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
                               CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj (__aeabi_f2iz)
 
@@ -861,18 +857,18 @@ Discarded input sections
  .text          0x00000000       0x14 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
  .data          0x00000000        0x0 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
  .bss           0x00000000        0x0 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
@@ -1119,20 +1115,6 @@ Discarded input sections
  .debug_frame   0x00000000       0x3c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-reent.o)
  .ARM.attributes
                 0x00000000       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-reent.o)
- .text          0x00000000      0x254 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
- .debug_line    0x00000000       0xf5 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
- .debug_line_str
-                0x00000000       0x99 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
- .debug_info    0x00000000       0x3f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
- .debug_abbrev  0x00000000       0x26 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
- .debug_aranges
-                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
- .debug_str     0x00000000       0xbb /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
- .debug_frame   0x00000000       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
- .ARM.attributes
-                0x00000000       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldf3.o)
  .text          0x00000000      0x168 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_mulsf3.o)
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_mulsf3.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_mulsf3.o)
@@ -1151,10 +1133,6 @@ Discarded input sections
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
- .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
@@ -1163,6 +1141,8 @@ Discarded input sections
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unordsf2.o)
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
  .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtend.o
@@ -1237,433 +1217,418 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
                 0x08000000                g_pfnVectors
                 0x0800010c                        . = ALIGN (0x4)
 
-.text           0x08000110     0x3938
+.text           0x08000110     0x364c
                 0x08000110                        . = ALIGN (0x4)
  *(.text)
  .text          0x08000110       0x88 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
- .text          0x08000198        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
-                0x08000198                atan2
- .text          0x0800019c       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
-                0x0800019c                sqrt
- .text          0x080001ec      0x1d4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
-                0x080001ec                __ieee754_sqrt
- .text          0x080003c0      0x190 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
-                0x080003c0                __ieee754_atan2
- .text          0x08000550      0x31c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
-                0x08000550                atan
- .text          0x0800086c        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
-                0x0800086c                fabs
- .text          0x08000874       0xa4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
-                0x08000874                memset
- .text          0x08000918        0xc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
-                0x08000918                __errno
- .text          0x08000924       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
-                0x08000924                __libc_init_array
- .text          0x08000974        0xc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
-                0x08000974                atexit
- .text          0x08000980       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
-                0x08000980                __libc_fini_array
- .text          0x080009a8       0x64 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
-                0x080009a8                __register_exitproc
- .text          0x08000a0c      0x378 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
-                0x08000a0c                __aeabi_drsub
-                0x08000a14                __aeabi_dsub
-                0x08000a14                __subdf3
-                0x08000a18                __adddf3
-                0x08000a18                __aeabi_dadd
-                0x08000c90                __aeabi_ui2d
-                0x08000c90                __floatunsidf
-                0x08000cb0                __floatsidf
-                0x08000cb0                __aeabi_i2d
-                0x08000cd4                __extendsfdf2
-                0x08000cd4                __aeabi_f2d
-                0x08000d18                __aeabi_ul2d
-                0x08000d18                __floatundidf
-                0x08000d28                __floatdidf
-                0x08000d28                __aeabi_l2d
- .text          0x08000d84      0x424 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
-                0x08000d84                __aeabi_dmul
-                0x08000d84                __muldf3
-                0x08000fd8                __aeabi_ddiv
-                0x08000fd8                __divdf3
- .text          0x080011a8      0x110 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
-                0x080011a8                __gtdf2
-                0x080011a8                __gedf2
-                0x080011b0                __ltdf2
-                0x080011b0                __ledf2
-                0x080011b8                __cmpdf2
-                0x080011b8                __eqdf2
-                0x080011b8                __nedf2
-                0x08001234                __aeabi_cdrcmple
-                0x08001244                __aeabi_cdcmple
-                0x08001244                __aeabi_cdcmpeq
-                0x08001254                __aeabi_dcmpeq
-                0x08001268                __aeabi_dcmplt
-                0x0800127c                __aeabi_dcmple
-                0x08001290                __aeabi_dcmpge
-                0x080012a4                __aeabi_dcmpgt
- .text          0x080012b8       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
-                0x080012b8                __aeabi_dcmpun
-                0x080012b8                __unorddf2
- .text          0x080012e4       0xa0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
-                0x080012e4                __aeabi_d2f
-                0x080012e4                __truncdfsf2
- .text          0x08001384      0x21c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
-                0x08001384                __aeabi_frsub
-                0x0800138c                __subsf3
-                0x0800138c                __aeabi_fsub
-                0x08001390                __aeabi_fadd
-                0x08001390                __addsf3
-                0x080014f0                __aeabi_ui2f
-                0x080014f0                __floatunsisf
-                0x080014f8                __aeabi_i2f
-                0x080014f8                __floatsisf
-                0x08001514                __floatundisf
-                0x08001514                __aeabi_ul2f
-                0x08001524                __floatdisf
-                0x08001524                __aeabi_l2f
- .text          0x080015a0      0x2a0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
-                0x080015a0                __mulsf3
-                0x080015a0                __aeabi_fmul
-                0x08001708                __divsf3
-                0x08001708                __aeabi_fdiv
- .text          0x08001840       0xec /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
-                0x08001840                __gtsf2
-                0x08001840                __gesf2
-                0x08001848                __lesf2
-                0x08001848                __ltsf2
-                0x08001850                __nesf2
-                0x08001850                __eqsf2
-                0x08001850                __cmpsf2
-                0x080018b0                __aeabi_cfrcmple
-                0x080018b8                __aeabi_cfcmple
-                0x080018b8                __aeabi_cfcmpeq
-                0x080018c8                __aeabi_fcmpeq
-                0x080018dc                __aeabi_fcmplt
-                0x080018f0                __aeabi_fcmple
-                0x08001904                __aeabi_fcmpge
-                0x08001918                __aeabi_fcmpgt
- .text          0x0800192c       0x4c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
-                0x0800192c                __fixsfsi
-                0x0800192c                __aeabi_f2iz
+ .text          0x08000198       0x38 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
+                0x08000198                sqrtf
+ .text          0x080001d0        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
+                0x080001d0                atan2f
+ .text          0x080001d4      0x110 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
+                0x080001d4                __ieee754_atan2f
+ .text          0x080002e4      0x228 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
+                0x080002e4                atanf
+ .text          0x0800050c        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
+                0x0800050c                fabsf
+ .text          0x08000514       0xd4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
+                0x08000514                __ieee754_sqrtf
+ .text          0x080005e8       0xa4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
+                0x080005e8                memset
+ .text          0x0800068c        0xc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
+                0x0800068c                __errno
+ .text          0x08000698       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
+                0x08000698                __libc_init_array
+ .text          0x080006e8        0xc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
+                0x080006e8                atexit
+ .text          0x080006f4       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
+                0x080006f4                __libc_fini_array
+ .text          0x0800071c       0x64 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
+                0x0800071c                __register_exitproc
+ .text          0x08000780      0x378 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
+                0x08000780                __aeabi_drsub
+                0x08000788                __aeabi_dsub
+                0x08000788                __subdf3
+                0x0800078c                __adddf3
+                0x0800078c                __aeabi_dadd
+                0x08000a04                __aeabi_ui2d
+                0x08000a04                __floatunsidf
+                0x08000a24                __floatsidf
+                0x08000a24                __aeabi_i2d
+                0x08000a48                __extendsfdf2
+                0x08000a48                __aeabi_f2d
+                0x08000a8c                __aeabi_ul2d
+                0x08000a8c                __floatundidf
+                0x08000a9c                __floatdidf
+                0x08000a9c                __aeabi_l2d
+ .text          0x08000af8      0x424 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
+                0x08000af8                __aeabi_dmul
+                0x08000af8                __muldf3
+                0x08000d4c                __aeabi_ddiv
+                0x08000d4c                __divdf3
+ .text          0x08000f1c       0xa0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
+                0x08000f1c                __aeabi_d2f
+                0x08000f1c                __truncdfsf2
+ .text          0x08000fbc      0x21c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
+                0x08000fbc                __aeabi_frsub
+                0x08000fc4                __subsf3
+                0x08000fc4                __aeabi_fsub
+                0x08000fc8                __aeabi_fadd
+                0x08000fc8                __addsf3
+                0x08001128                __aeabi_ui2f
+                0x08001128                __floatunsisf
+                0x08001130                __aeabi_i2f
+                0x08001130                __floatsisf
+                0x0800114c                __floatundisf
+                0x0800114c                __aeabi_ul2f
+                0x0800115c                __floatdisf
+                0x0800115c                __aeabi_l2f
+ .text          0x080011d8      0x2a0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
+                0x080011d8                __mulsf3
+                0x080011d8                __aeabi_fmul
+                0x08001340                __divsf3
+                0x08001340                __aeabi_fdiv
+ .text          0x08001478       0xec /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
+                0x08001478                __gtsf2
+                0x08001478                __gesf2
+                0x08001480                __lesf2
+                0x08001480                __ltsf2
+                0x08001488                __nesf2
+                0x08001488                __eqsf2
+                0x08001488                __cmpsf2
+                0x080014e8                __aeabi_cfrcmple
+                0x080014f0                __aeabi_cfcmple
+                0x080014f0                __aeabi_cfcmpeq
+                0x08001500                __aeabi_fcmpeq
+                0x08001514                __aeabi_fcmplt
+                0x08001528                __aeabi_fcmple
+                0x0800153c                __aeabi_fcmpge
+                0x08001550                __aeabi_fcmpgt
+ .text          0x08001564       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unordsf2.o)
+                0x08001564                __aeabi_fcmpun
+                0x08001564                __unordsf2
+ .text          0x08001590       0x4c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
+                0x08001590                __fixsfsi
+                0x08001590                __aeabi_f2iz
  *(.text*)
  .text.MX_GPIO_Init
-                0x08001978       0xf8 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.obj
-                0x08001978                MX_GPIO_Init
+                0x080015dc       0xf8 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.obj
+                0x080015dc                MX_GPIO_Init
  .text.MX_I2C1_Init
-                0x08001a70       0x3c CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj
-                0x08001a70                MX_I2C1_Init
+                0x080016d4       0x3c CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj
+                0x080016d4                MX_I2C1_Init
  .text.HAL_I2C_MspInit
-                0x08001aac       0x64 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj
-                0x08001aac                HAL_I2C_MspInit
+                0x08001710       0x64 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj
+                0x08001710                HAL_I2C_MspInit
  .text.MPU6050_Init
-                0x08001b10       0x2c CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
-                0x08001b10                MPU6050_Init
+                0x08001774       0x2c CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+                0x08001774                MPU6050_Init
  .text.MPU6050_Read_Accel
-                0x08001b3c       0x98 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
-                0x08001b3c                MPU6050_Read_Accel
+                0x080017a0       0x98 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+                0x080017a0                MPU6050_Read_Accel
  .text.MPU6050_Calibrate
-                0x08001bd4       0xcc CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
-                0x08001bd4                MPU6050_Calibrate
+                0x08001838       0xcc CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+                0x08001838                MPU6050_Calibrate
+ *fill*         0x08001904        0x4 
  .text.Calculate_Angles
-                0x08001ca0      0x120 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
-                0x08001ca0                Calculate_Angles
+                0x08001908      0x1cc CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+                0x08001908                Calculate_Angles
  .text.IntToStr
-                0x08001dc0       0x74 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
-                0x08001dc0                IntToStr
+                0x08001ad4       0x74 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+                0x08001ad4                IntToStr
  .text.FloatToStr
-                0x08001e34       0x98 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
-                0x08001e34                FloatToStr
+                0x08001b48       0x98 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+                0x08001b48                FloatToStr
  .text.UART_Send_Angles
-                0x08001ecc       0xb8 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
-                0x08001ecc                UART_Send_Angles
+                0x08001be0       0xb8 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+                0x08001be0                UART_Send_Angles
  .text.Error_Handler
-                0x08001f84        0x4 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
-                0x08001f84                Error_Handler
+                0x08001c98        0x4 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+                0x08001c98                Error_Handler
  .text.SystemClock_Config
-                0x08001f88       0x64 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
-                0x08001f88                SystemClock_Config
- .text.main     0x08001fec       0x74 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
-                0x08001fec                main
+                0x08001c9c       0x64 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+                0x08001c9c                SystemClock_Config
+ .text.main     0x08001d00       0x74 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+                0x08001d00                main
  .text.HAL_MspInit
-                0x08002060       0x44 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-                0x08002060                HAL_MspInit
+                0x08001d74       0x44 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x08001d74                HAL_MspInit
  .text.NMI_Handler
-                0x080020a4        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020a4                NMI_Handler
+                0x08001db8        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001db8                NMI_Handler
  .text.HardFault_Handler
-                0x080020a6        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020a6                HardFault_Handler
+                0x08001dba        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001dba                HardFault_Handler
  .text.MemManage_Handler
-                0x080020a8        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020a8                MemManage_Handler
+                0x08001dbc        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001dbc                MemManage_Handler
  .text.BusFault_Handler
-                0x080020aa        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020aa                BusFault_Handler
+                0x08001dbe        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001dbe                BusFault_Handler
  .text.UsageFault_Handler
-                0x080020ac        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020ac                UsageFault_Handler
+                0x08001dc0        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001dc0                UsageFault_Handler
  .text.SVC_Handler
-                0x080020ae        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020ae                SVC_Handler
+                0x08001dc2        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001dc2                SVC_Handler
  .text.DebugMon_Handler
-                0x080020b0        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020b0                DebugMon_Handler
+                0x08001dc4        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001dc4                DebugMon_Handler
  .text.PendSV_Handler
-                0x080020b2        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020b2                PendSV_Handler
+                0x08001dc6        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001dc6                PendSV_Handler
  .text.SysTick_Handler
-                0x080020b4        0x8 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020b4                SysTick_Handler
+                0x08001dc8        0x8 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001dc8                SysTick_Handler
  .text.EXTI15_10_IRQHandler
-                0x080020bc        0xc CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
-                0x080020bc                EXTI15_10_IRQHandler
+                0x08001dd0        0xc CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x08001dd0                EXTI15_10_IRQHandler
  .text.SystemInit
-                0x080020c8        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x080020c8                SystemInit
- *fill*         0x080020ca        0x2 
+                0x08001ddc        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x08001ddc                SystemInit
+ *fill*         0x08001dde        0x2 
  .text.MX_USART2_UART_Init
-                0x080020cc       0x34 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
-                0x080020cc                MX_USART2_UART_Init
+                0x08001de0       0x34 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
+                0x08001de0                MX_USART2_UART_Init
  .text.HAL_UART_MspInit
-                0x08002100       0x60 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
-                0x08002100                HAL_UART_MspInit
+                0x08001e14       0x60 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
+                0x08001e14                HAL_UART_MspInit
  .text.HAL_InitTick
-                0x08002160       0x4c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x08002160                HAL_InitTick
+                0x08001e74       0x4c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08001e74                HAL_InitTick
  .text.HAL_Init
-                0x080021ac       0x24 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080021ac                HAL_Init
+                0x08001ec0       0x24 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08001ec0                HAL_Init
  .text.HAL_IncTick
-                0x080021d0       0x18 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080021d0                HAL_IncTick
+                0x08001ee4       0x18 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08001ee4                HAL_IncTick
  .text.HAL_GetTick
-                0x080021e8        0xc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080021e8                HAL_GetTick
+                0x08001efc        0xc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08001efc                HAL_GetTick
  .text.HAL_Delay
-                0x080021f4       0x28 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x080021f4                HAL_Delay
+                0x08001f08       0x28 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x08001f08                HAL_Delay
  .text.__NVIC_SetPriority
-                0x0800221c       0x28 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001f30       0x28 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x08002244       0x3e CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- *fill*         0x08002282        0x2 
+                0x08001f58       0x3e CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ *fill*         0x08001f96        0x2 
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08002284       0x24 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x08002284                HAL_NVIC_SetPriorityGrouping
+                0x08001f98       0x24 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001f98                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x080022a8       0x20 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x080022a8                HAL_NVIC_SetPriority
+                0x08001fbc       0x20 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001fbc                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x080022c8       0x1c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x080022c8                HAL_NVIC_EnableIRQ
+                0x08001fdc       0x1c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001fdc                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x080022e4       0x28 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                0x080022e4                HAL_SYSTICK_Config
+                0x08001ff8       0x28 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x08001ff8                HAL_SYSTICK_Config
  .text.HAL_GPIO_Init
-                0x0800230c      0x21c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x0800230c                HAL_GPIO_Init
+                0x08002020      0x21c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08002020                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08002528        0xc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08002528                HAL_GPIO_WritePin
+                0x0800223c        0xc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x0800223c                HAL_GPIO_WritePin
  .text.HAL_GPIO_EXTI_Callback
-                0x08002534        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08002534                HAL_GPIO_EXTI_Callback
- *fill*         0x08002536        0x2 
+                0x08002248        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x08002248                HAL_GPIO_EXTI_Callback
+ *fill*         0x0800224a        0x2 
  .text.HAL_GPIO_EXTI_IRQHandler
-                0x08002538       0x1c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                0x08002538                HAL_GPIO_EXTI_IRQHandler
+                0x0800224c       0x1c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x0800224c                HAL_GPIO_EXTI_IRQHandler
  .text.I2C_IsAcknowledgeFailed
-                0x08002554       0x32 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08002268       0x32 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnFlagUntilTimeout
-                0x08002586       0xaa CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x0800229a       0xaa CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnMasterAddressFlagUntilTimeout
-                0x08002630       0xd6 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08002344       0xd6 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnTXEFlagUntilTimeout
-                0x08002706       0x5e CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x0800241a       0x5e CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_RequestMemoryWrite
-                0x08002764       0xd8 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08002478       0xd8 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_RequestMemoryRead
-                0x0800283c      0x154 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08002550      0x154 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnBTFFlagUntilTimeout
-                0x08002990       0x5e CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x080026a4       0x5e CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .text.I2C_WaitOnRXNEFlagUntilTimeout
-                0x080029ee       0x78 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- *fill*         0x08002a66        0x2 
+                0x08002702       0x78 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+ *fill*         0x0800277a        0x2 
  .text.HAL_I2C_Init
-                0x08002a68      0x1bc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-                0x08002a68                HAL_I2C_Init
+                0x0800277c      0x1bc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x0800277c                HAL_I2C_Init
  .text.HAL_I2C_Mem_Write
-                0x08002c24      0x164 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-                0x08002c24                HAL_I2C_Mem_Write
+                0x08002938      0x164 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08002938                HAL_I2C_Mem_Write
  .text.HAL_I2C_Mem_Read
-                0x08002d88      0x35c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-                0x08002d88                HAL_I2C_Mem_Read
+                0x08002a9c      0x35c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x08002a9c                HAL_I2C_Mem_Read
  .text.RCC_Delay
-                0x080030e4       0x2c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08002df8       0x2c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .text.HAL_RCC_OscConfig
-                0x08003110      0x410 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08003110                HAL_RCC_OscConfig
+                0x08002e24      0x410 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08002e24                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08003520       0x54 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08003520                HAL_RCC_GetSysClockFreq
+                0x08003234       0x54 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08003234                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x08003574      0x16c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08003574                HAL_RCC_ClockConfig
+                0x08003288      0x16c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08003288                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x080036e0        0xc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x080036e0                HAL_RCC_GetHCLKFreq
+                0x080033f4        0xc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080033f4                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x080036ec       0x20 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x080036ec                HAL_RCC_GetPCLK1Freq
+                0x08003400       0x20 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08003400                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x0800370c       0x20 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x0800370c                HAL_RCC_GetPCLK2Freq
+                0x08003420       0x20 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x08003420                HAL_RCC_GetPCLK2Freq
  .text.UART_EndRxTransfer
-                0x0800372c       0x5c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08003440       0x5c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_SetConfig
-                0x08003788       0x94 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x0800349c       0x94 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.UART_WaitOnFlagUntilTimeout
-                0x0800381c       0x86 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08003530       0x86 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .text.HAL_UART_Init
-                0x080038a2       0x60 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x080038a2                HAL_UART_Init
+                0x080035b6       0x60 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x080035b6                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x08003902       0xcc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                0x08003902                HAL_UART_Transmit
- *fill*         0x080039ce        0x2 
+                0x08003616       0xcc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x08003616                HAL_UART_Transmit
+ *fill*         0x080036e2        0x2 
  .text.Reset_Handler
-                0x080039d0       0x48 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
-                0x080039d0                Reset_Handler
+                0x080036e4       0x48 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
+                0x080036e4                Reset_Handler
  .text.Default_Handler
-                0x08003a18        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
-                0x08003a18                RTC_Alarm_IRQHandler
-                0x08003a18                EXTI2_IRQHandler
-                0x08003a18                TIM1_CC_IRQHandler
-                0x08003a18                PVD_IRQHandler
-                0x08003a18                EXTI3_IRQHandler
-                0x08003a18                EXTI0_IRQHandler
-                0x08003a18                I2C2_EV_IRQHandler
-                0x08003a18                ADC1_2_IRQHandler
-                0x08003a18                SPI1_IRQHandler
-                0x08003a18                TAMPER_IRQHandler
-                0x08003a18                DMA1_Channel4_IRQHandler
-                0x08003a18                USART3_IRQHandler
-                0x08003a18                RTC_IRQHandler
-                0x08003a18                DMA1_Channel7_IRQHandler
-                0x08003a18                CAN1_RX1_IRQHandler
-                0x08003a18                TIM4_IRQHandler
-                0x08003a18                I2C1_EV_IRQHandler
-                0x08003a18                DMA1_Channel6_IRQHandler
-                0x08003a18                TIM3_IRQHandler
-                0x08003a18                RCC_IRQHandler
-                0x08003a18                TIM1_TRG_COM_IRQHandler
-                0x08003a18                DMA1_Channel1_IRQHandler
-                0x08003a18                Default_Handler
-                0x08003a18                EXTI9_5_IRQHandler
-                0x08003a18                SPI2_IRQHandler
-                0x08003a18                DMA1_Channel5_IRQHandler
-                0x08003a18                EXTI4_IRQHandler
-                0x08003a18                USB_LP_CAN1_RX0_IRQHandler
-                0x08003a18                USB_HP_CAN1_TX_IRQHandler
-                0x08003a18                DMA1_Channel3_IRQHandler
-                0x08003a18                TIM1_UP_IRQHandler
-                0x08003a18                WWDG_IRQHandler
-                0x08003a18                TIM2_IRQHandler
-                0x08003a18                TIM1_BRK_IRQHandler
-                0x08003a18                EXTI1_IRQHandler
-                0x08003a18                USART2_IRQHandler
-                0x08003a18                I2C2_ER_IRQHandler
-                0x08003a18                DMA1_Channel2_IRQHandler
-                0x08003a18                CAN1_SCE_IRQHandler
-                0x08003a18                FLASH_IRQHandler
-                0x08003a18                USART1_IRQHandler
-                0x08003a18                I2C1_ER_IRQHandler
-                0x08003a18                USBWakeUp_IRQHandler
- *fill*         0x08003a1a        0x2 
- .text.startup  0x08003a1c       0x14 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
+                0x0800372c        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
+                0x0800372c                RTC_Alarm_IRQHandler
+                0x0800372c                EXTI2_IRQHandler
+                0x0800372c                TIM1_CC_IRQHandler
+                0x0800372c                PVD_IRQHandler
+                0x0800372c                EXTI3_IRQHandler
+                0x0800372c                EXTI0_IRQHandler
+                0x0800372c                I2C2_EV_IRQHandler
+                0x0800372c                ADC1_2_IRQHandler
+                0x0800372c                SPI1_IRQHandler
+                0x0800372c                TAMPER_IRQHandler
+                0x0800372c                DMA1_Channel4_IRQHandler
+                0x0800372c                USART3_IRQHandler
+                0x0800372c                RTC_IRQHandler
+                0x0800372c                DMA1_Channel7_IRQHandler
+                0x0800372c                CAN1_RX1_IRQHandler
+                0x0800372c                TIM4_IRQHandler
+                0x0800372c                I2C1_EV_IRQHandler
+                0x0800372c                DMA1_Channel6_IRQHandler
+                0x0800372c                TIM3_IRQHandler
+                0x0800372c                RCC_IRQHandler
+                0x0800372c                TIM1_TRG_COM_IRQHandler
+                0x0800372c                DMA1_Channel1_IRQHandler
+                0x0800372c                Default_Handler
+                0x0800372c                EXTI9_5_IRQHandler
+                0x0800372c                SPI2_IRQHandler
+                0x0800372c                DMA1_Channel5_IRQHandler
+                0x0800372c                EXTI4_IRQHandler
+                0x0800372c                USB_LP_CAN1_RX0_IRQHandler
+                0x0800372c                USB_HP_CAN1_TX_IRQHandler
+                0x0800372c                DMA1_Channel3_IRQHandler
+                0x0800372c                TIM1_UP_IRQHandler
+                0x0800372c                WWDG_IRQHandler
+                0x0800372c                TIM2_IRQHandler
+                0x0800372c                TIM1_BRK_IRQHandler
+                0x0800372c                EXTI1_IRQHandler
+                0x0800372c                USART2_IRQHandler
+                0x0800372c                I2C2_ER_IRQHandler
+                0x0800372c                DMA1_Channel2_IRQHandler
+                0x0800372c                CAN1_SCE_IRQHandler
+                0x0800372c                FLASH_IRQHandler
+                0x0800372c                USART1_IRQHandler
+                0x0800372c                I2C1_ER_IRQHandler
+                0x0800372c                USBWakeUp_IRQHandler
+ *fill*         0x0800372e        0x2 
+ .text.startup  0x08003730       0x14 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
  *(.glue_7)
- .glue_7        0x08003a30        0x0 linker stubs
+ .glue_7        0x08003744        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08003a30        0x0 linker stubs
+ .glue_7t       0x08003744        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08003a30        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x08003744        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x08003a30        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crti.o
-                0x08003a30                _init
- .init          0x08003a34        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x08003744        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crti.o
+                0x08003744                _init
+ .init          0x08003748        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x08003a3c        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crti.o
-                0x08003a3c                _fini
- .fini          0x08003a40        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
-                0x08003a48                        . = ALIGN (0x4)
-                0x08003a48                        _etext = .
+ .fini          0x08003750        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crti.o
+                0x08003750                _fini
+ .fini          0x08003754        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
+                0x0800375c                        . = ALIGN (0x4)
+                0x0800375c                        _etext = .
 
-.vfp11_veneer   0x08003a48        0x0
- .vfp11_veneer  0x08003a48        0x0 linker stubs
+.vfp11_veneer   0x0800375c        0x0
+ .vfp11_veneer  0x0800375c        0x0 linker stubs
 
-.v4_bx          0x08003a48        0x0
- .v4_bx         0x08003a48        0x0 linker stubs
+.v4_bx          0x0800375c        0x0
+ .v4_bx         0x0800375c        0x0 linker stubs
 
-.iplt           0x08003a48        0x0
- .iplt          0x08003a48        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x0800375c        0x0
+ .iplt          0x0800375c        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x08003a48       0xc8
-                0x08003a48                        . = ALIGN (0x4)
+.rodata         0x0800375c       0x88
+                0x0800375c                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08003a48       0x10 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
- .rodata        0x08003a58       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
- .rodata        0x08003a88       0x40 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
+ .rodata        0x0800375c       0x18 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
+ .rodata        0x08003774       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
+ .rodata        0x08003794        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
  *(.rodata*)
  .rodata.UART_Send_Angles.str1.4
-                0x08003ac8       0x1c CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+                0x0800379c       0x1c CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
  .rodata.APBPrescTable
-                0x08003ae4        0x8 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x08003ae4                APBPrescTable
+                0x080037b8        0x8 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x080037b8                APBPrescTable
  .rodata.AHBPrescTable
-                0x08003aec       0x10 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x08003aec                AHBPrescTable
+                0x080037c0       0x10 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x080037c0                AHBPrescTable
  .rodata.aPredivFactorTable.0
-                0x08003afc        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x08003afe        0x2 
+                0x080037d0        0x2 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x080037d2        0x2 
  .rodata.aPLLMULFactorTable.1
-                0x08003b00       0x10 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                0x08003b10                        . = ALIGN (0x4)
+                0x080037d4       0x10 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x080037e4                        . = ALIGN (0x4)
 
-.rel.dyn        0x08003b10        0x0
- .rel.iplt      0x08003b10        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x080037e4        0x0
+ .rel.iplt      0x080037e4        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08003b10        0x0
-                0x08003b10                        __exidx_start = .
+.ARM            0x080037e4        0x0
+                0x080037e4                        __exidx_start = .
  *(.ARM.exidx*)
-                0x08003b10                        __exidx_end = .
+                0x080037e4                        __exidx_end = .
 
-.preinit_array  0x08003b10        0x0
-                0x08003b10                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080037e4        0x0
+                0x080037e4                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08003b10                        PROVIDE (__preinit_array_end = .)
+                0x080037e4                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x08003b10        0x8
-                0x08003b10                        PROVIDE (__init_array_start = .)
+.init_array     0x080037e4        0x8
+                0x080037e4                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x08003b10        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
+                0x080037e4        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x08003b14        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x08003b18                        PROVIDE (__init_array_end = .)
+ .init_array    0x080037e8        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x080037ec                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x08003b18        0x4
-                0x08003b18                        PROVIDE (__fini_array_start = .)
+.fini_array     0x080037ec        0x4
+                0x080037ec                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08003b18        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x08003b1c                        PROVIDE (__fini_array_end = .)
-                0x08003b1c                        _sidata = LOADADDR (.data)
+ .fini_array    0x080037ec        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x080037f0                        PROVIDE (__fini_array_end = .)
+                0x080037f0                        _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x134 load address 0x08003b1c
+.data           0x20000000      0x134 load address 0x080037f0
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -1685,17 +1650,17 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
                 0x20000134                        _edata = .
 
 .tm_clone_table
-                0x20000134        0x0 load address 0x08003c50
+                0x20000134        0x0 load address 0x08003924
  .tm_clone_table
                 0x20000134        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000134        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtend.o
 
-.igot.plt       0x20000134        0x0 load address 0x08003c50
+.igot.plt       0x20000134        0x0 load address 0x08003924
  .igot.plt      0x20000134        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtbegin.o
                 0x20000134                        . = ALIGN (0x4)
 
-.bss            0x20000134      0x390 load address 0x08003c50
+.bss            0x20000134      0x390 load address 0x08003924
                 0x20000134                        _sbss = .
                 0x20000134                        __bss_start__ = _sbss
  *(.bss)
@@ -1722,7 +1687,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
                 0x200004c4                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200004c4      0x604 load address 0x08003c50
+                0x200004c4      0x604 load address 0x08003924
                 0x200004c8                        . = ALIGN (0x8)
  *fill*         0x200004c4        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -1774,17 +1739,17 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
  .ARM.attributes
                 0x000002a2       0x21 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
  .ARM.attributes
-                0x000002c3       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
+                0x000002c3       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
  .ARM.attributes
-                0x000002f1       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
+                0x000002f1       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
  .ARM.attributes
-                0x0000031f       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
+                0x0000031f       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
  .ARM.attributes
-                0x0000034d       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
+                0x0000034d       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
  .ARM.attributes
-                0x0000037b       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
+                0x0000037b       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
  .ARM.attributes
-                0x000003a9       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
+                0x000003a9       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
  .ARM.attributes
                 0x000003d7       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
  .ARM.attributes
@@ -1808,23 +1773,21 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
  .ARM.attributes
                 0x00000593       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
  .ARM.attributes
-                0x000005b1       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
+                0x000005b1       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
  .ARM.attributes
-                0x000005cf       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
+                0x000005cf       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
  .ARM.attributes
-                0x000005ed       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
+                0x000005ed       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
  .ARM.attributes
-                0x0000060b       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
+                0x0000060b       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
  .ARM.attributes
-                0x00000629       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
+                0x00000629       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unordsf2.o)
  .ARM.attributes
-                0x00000647       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
+                0x00000647       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
  .ARM.attributes
-                0x00000665       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
+                0x00000665       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtend.o
  .ARM.attributes
-                0x00000683       0x2e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtend.o
- .ARM.attributes
-                0x000006b1       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
+                0x00000693       0x1e /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtn.o
 OUTPUT(SPI2_MPU-6050.elf elf32-littlearm)
 LOAD linker stubs
 LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a
@@ -1847,12 +1810,12 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a
  .comment       0x00000026       0x27 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .comment       0x00000026       0x27 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .comment       0x00000026       0x27 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
- .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
- .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
- .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
- .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
- .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
  .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
  .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
  .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-impure.o)
@@ -1864,87 +1827,85 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a
  .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
  .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/crtend.o
 
-.debug_info     0x00000000    0x102f1
+.debug_info     0x00000000    0x1021c
  .debug_info    0x00000000      0x507 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.obj
  .debug_info    0x00000507      0x82c CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj
- .debug_info    0x00000d33     0x13f5 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
- .debug_info    0x00002128      0x1e1 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x00002309      0x158 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_info    0x00002461      0x20c CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_info    0x0000266d      0x7c9 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
- .debug_info    0x00002e36      0x78f CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_info    0x000035c5      0xcae CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_info    0x00004273      0x5e5 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_info    0x00004858     0x38e0 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- .debug_info    0x00008138      0x99c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_info    0x00008ad4     0x3f5a CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_info    0x0000ca2e       0x30 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
- .debug_info    0x0000ca5e      0x103 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
- .debug_info    0x0000cb61      0x14b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
- .debug_info    0x0000ccac      0x2e8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
- .debug_info    0x0000cf94      0x324 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
- .debug_info    0x0000d2b8      0x485 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
- .debug_info    0x0000d73d      0x142 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
- .debug_info    0x0000d87f      0x135 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
- .debug_info    0x0000d9b4      0x70f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
- .debug_info    0x0000e0c3      0x729 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-impure.o)
- .debug_info    0x0000e7ec      0x10b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
- .debug_info    0x0000e8f7      0xea8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
- .debug_info    0x0000f79f      0x11e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
- .debug_info    0x0000f8bd       0xf7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
- .debug_info    0x0000f9b4      0x284 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
- .debug_info    0x0000fc38      0x1fd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
- .debug_info    0x0000fe35       0xd3 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
- .debug_info    0x0000ff08       0x57 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .debug_info    0x0000ff5f       0xdf /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_info    0x0001003e       0x3c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
- .debug_info    0x0001007a       0x3f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
- .debug_info    0x000100b9       0xca /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
- .debug_info    0x00010183       0x57 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
- .debug_info    0x000101da       0xdb /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
- .debug_info    0x000102b5       0x3c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
+ .debug_info    0x00000d33     0x150d CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00002240      0x1e1 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x00002421      0x158 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_info    0x00002579      0x20c CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_info    0x00002785      0x7c9 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
+ .debug_info    0x00002f4e      0x78f CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_info    0x000036dd      0xcae CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_info    0x0000438b      0x5e5 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_info    0x00004970     0x38e0 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+ .debug_info    0x00008250      0x99c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_info    0x00008bec     0x3f5a CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_info    0x0000cb46       0x30 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
+ .debug_info    0x0000cb76      0x145 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
+ .debug_info    0x0000ccbb       0xf8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
+ .debug_info    0x0000cdb3      0x313 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
+ .debug_info    0x0000d0c6      0x406 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
+ .debug_info    0x0000d4cc      0x13e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
+ .debug_info    0x0000d60a      0x27f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
+ .debug_info    0x0000d889      0x135 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
+ .debug_info    0x0000d9be      0x70f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
+ .debug_info    0x0000e0cd      0x729 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-impure.o)
+ .debug_info    0x0000e7f6      0x10b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
+ .debug_info    0x0000e901      0xea8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
+ .debug_info    0x0000f7a9      0x11e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
+ .debug_info    0x0000f8c7       0xf7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
+ .debug_info    0x0000f9be      0x284 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
+ .debug_info    0x0000fc42      0x1fd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
+ .debug_info    0x0000fe3f       0xd3 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x0000ff12       0x57 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x0000ff69       0x3f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
+ .debug_info    0x0000ffa8       0xca /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_info    0x00010072       0x57 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .debug_info    0x000100c9       0xdb /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_info    0x000101a4       0x3c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .debug_info    0x000101e0       0x3c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
 
-.debug_abbrev   0x00000000     0x31b7
+.debug_abbrev   0x00000000     0x30ea
  .debug_abbrev  0x00000000      0x173 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.obj
  .debug_abbrev  0x00000173      0x1fc CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj
- .debug_abbrev  0x0000036f      0x37e CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
- .debug_abbrev  0x000006ed       0xed CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_abbrev  0x000007da       0xbb CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_abbrev  0x00000895      0x144 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_abbrev  0x000009d9      0x204 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
- .debug_abbrev  0x00000bdd      0x22d CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_abbrev  0x00000e0a      0x36d CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_abbrev  0x00001177      0x1f7 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_abbrev  0x0000136e      0x2be CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- .debug_abbrev  0x0000162c      0x2a0 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_abbrev  0x000018cc      0x31c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_abbrev  0x00001be8       0x24 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
- .debug_abbrev  0x00001c0c       0x8d /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
- .debug_abbrev  0x00001c99       0xd5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
- .debug_abbrev  0x00001d6e      0x15e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
- .debug_abbrev  0x00001ecc      0x178 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
- .debug_abbrev  0x00002044      0x18d /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
- .debug_abbrev  0x000021d1       0xd8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
- .debug_abbrev  0x000022a9       0xb7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
- .debug_abbrev  0x00002360      0x19a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
- .debug_abbrev  0x000024fa      0x185 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-impure.o)
- .debug_abbrev  0x0000267f       0xc9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
- .debug_abbrev  0x00002748      0x446 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
- .debug_abbrev  0x00002b8e       0xc1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
- .debug_abbrev  0x00002c4f       0xcc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
- .debug_abbrev  0x00002d1b      0x1dd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
- .debug_abbrev  0x00002ef8      0x157 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
- .debug_abbrev  0x0000304f       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
- .debug_abbrev  0x00003077       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .debug_abbrev  0x0000309f       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_abbrev  0x000030c7       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
- .debug_abbrev  0x000030ef       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
- .debug_abbrev  0x00003117       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
- .debug_abbrev  0x0000313f       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
- .debug_abbrev  0x00003167       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
- .debug_abbrev  0x0000318f       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
+ .debug_abbrev  0x0000036f      0x389 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x000006f8       0xed CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_abbrev  0x000007e5       0xbb CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_abbrev  0x000008a0      0x144 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_abbrev  0x000009e4      0x204 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
+ .debug_abbrev  0x00000be8      0x22d CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_abbrev  0x00000e15      0x36d CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_abbrev  0x00001182      0x1f7 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_abbrev  0x00001379      0x2be CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+ .debug_abbrev  0x00001637      0x2a0 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_abbrev  0x000018d7      0x31c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_abbrev  0x00001bf3       0x24 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
+ .debug_abbrev  0x00001c17       0xd5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
+ .debug_abbrev  0x00001cec       0x8e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
+ .debug_abbrev  0x00001d7a      0x14f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
+ .debug_abbrev  0x00001ec9      0x149 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
+ .debug_abbrev  0x00002012       0xd4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
+ .debug_abbrev  0x000020e6      0x11e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
+ .debug_abbrev  0x00002204       0xb7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
+ .debug_abbrev  0x000022bb      0x19a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
+ .debug_abbrev  0x00002455      0x185 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-impure.o)
+ .debug_abbrev  0x000025da       0xc9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
+ .debug_abbrev  0x000026a3      0x446 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
+ .debug_abbrev  0x00002ae9       0xc1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
+ .debug_abbrev  0x00002baa       0xcc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
+ .debug_abbrev  0x00002c76      0x1dd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
+ .debug_abbrev  0x00002e53      0x157 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
+ .debug_abbrev  0x00002faa       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x00002fd2       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x00002ffa       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
+ .debug_abbrev  0x00003022       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_abbrev  0x0000304a       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .debug_abbrev  0x00003072       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_abbrev  0x0000309a       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .debug_abbrev  0x000030c2       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
 
-.debug_aranges  0x00000000      0xbf8
+.debug_aranges  0x00000000      0xbd8
  .debug_aranges
                 0x00000000       0x20 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.obj
  .debug_aranges
@@ -1974,17 +1935,17 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a
  .debug_aranges
                 0x000008d0       0x28 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
  .debug_aranges
-                0x000008f8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
+                0x000008f8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
  .debug_aranges
-                0x00000918       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
+                0x00000918       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
  .debug_aranges
-                0x00000938       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
+                0x00000938       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
  .debug_aranges
-                0x00000958       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
+                0x00000958       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
  .debug_aranges
-                0x00000978       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
+                0x00000978       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
  .debug_aranges
-                0x00000998       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
+                0x00000998       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
  .debug_aranges
                 0x000009b8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
  .debug_aranges
@@ -2008,19 +1969,17 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a
  .debug_aranges
                 0x00000af8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
  .debug_aranges
-                0x00000b18       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
+                0x00000b18       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
  .debug_aranges
-                0x00000b38       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
+                0x00000b38       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
  .debug_aranges
-                0x00000b58       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
+                0x00000b58       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
  .debug_aranges
-                0x00000b78       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
+                0x00000b78       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
  .debug_aranges
-                0x00000b98       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
+                0x00000b98       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unordsf2.o)
  .debug_aranges
-                0x00000bb8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
- .debug_aranges
-                0x00000bd8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
+                0x00000bb8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
 
 .debug_rnglists
                 0x00000000      0x800
@@ -2053,185 +2012,184 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a
  .debug_rnglists
                 0x000006e3       0x19 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
  .debug_rnglists
-                0x000006fc       0x13 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
+                0x000006fc       0x1a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
  .debug_rnglists
-                0x0000070f       0x25 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
+                0x00000716       0x13 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
  .debug_rnglists
-                0x00000734       0x1b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
+                0x00000729       0x13 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
+ .debug_rnglists
+                0x0000073c       0x13 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
  .debug_rnglists
                 0x0000074f       0x77 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
  .debug_rnglists
                 0x000007c6       0x3a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
 
-.debug_line     0x00000000     0xe475
+.debug_line     0x00000000     0xe2bb
  .debug_line    0x00000000      0x249 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.obj
  .debug_line    0x00000249      0x2f4 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj
- .debug_line    0x0000053d      0x8fa CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
- .debug_line    0x00000e37      0x134 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x00000f6b      0x200 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_line    0x0000116b      0x1fc CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_line    0x00001367      0x2ef CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
- .debug_line    0x00001656      0x541 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_line    0x00001b97      0x68c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_line    0x00002223      0x5b5 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_line    0x000027d8     0x565b CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- .debug_line    0x00007e33      0xc8f CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_line    0x00008ac2     0x34b2 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_line    0x0000bf74       0x78 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
- .debug_line    0x0000bfec       0xdf /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
- .debug_line    0x0000c0cb      0x165 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
- .debug_line    0x0000c230      0x451 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
- .debug_line    0x0000c681      0x2dc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
- .debug_line    0x0000c95d      0x31f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
- .debug_line    0x0000cc7c      0x14b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
- .debug_line    0x0000cdc7      0x1b6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
- .debug_line    0x0000cf7d      0x10c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
- .debug_line    0x0000d089       0xe7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-impure.o)
- .debug_line    0x0000d170      0x11e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
- .debug_line    0x0000d28e      0x4fc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
- .debug_line    0x0000d78a       0xc3 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
- .debug_line    0x0000d84d       0xd2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
- .debug_line    0x0000d91f      0x27f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
- .debug_line    0x0000db9e      0x14f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
- .debug_line    0x0000dced      0x16f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
- .debug_line    0x0000de5c      0x184 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .debug_line    0x0000dfe0       0xa6 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_line    0x0000e086       0x57 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
- .debug_line    0x0000e0dd       0x76 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
- .debug_line    0x0000e153      0x103 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
- .debug_line    0x0000e256      0x123 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
- .debug_line    0x0000e379       0x9a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
- .debug_line    0x0000e413       0x62 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
+ .debug_line    0x0000053d      0x964 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x00000ea1      0x134 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x00000fd5      0x200 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_line    0x000011d5      0x1fc CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_line    0x000013d1      0x2ef CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
+ .debug_line    0x000016c0      0x541 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_line    0x00001c01      0x68c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_line    0x0000228d      0x5b5 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_line    0x00002842     0x565b CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+ .debug_line    0x00007e9d      0xc8f CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_line    0x00008b2c     0x34b2 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_line    0x0000bfde       0x78 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
+ .debug_line    0x0000c056      0x165 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
+ .debug_line    0x0000c1bb       0xdf /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
+ .debug_line    0x0000c29a      0x2eb /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
+ .debug_line    0x0000c585      0x31a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
+ .debug_line    0x0000c89f      0x154 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
+ .debug_line    0x0000c9f3      0x2c0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
+ .debug_line    0x0000ccb3      0x1b6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
+ .debug_line    0x0000ce69      0x10c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
+ .debug_line    0x0000cf75       0xe7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-impure.o)
+ .debug_line    0x0000d05c      0x11e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
+ .debug_line    0x0000d17a      0x4fc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
+ .debug_line    0x0000d676       0xc3 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
+ .debug_line    0x0000d739       0xd2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
+ .debug_line    0x0000d80b      0x27f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
+ .debug_line    0x0000da8a      0x14f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
+ .debug_line    0x0000dbd9      0x16f /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x0000dd48      0x184 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x0000decc       0x76 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
+ .debug_line    0x0000df42      0x103 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_line    0x0000e045      0x123 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .debug_line    0x0000e168       0x9a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_line    0x0000e202       0x57 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .debug_line    0x0000e259       0x62 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
 
-.debug_str      0x00000000     0x3a90
- .debug_str     0x00000000     0x3a90 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.obj
+.debug_str      0x00000000     0x3a02
+ .debug_str     0x00000000     0x3a02 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.obj
                                 0x5ac (size before relaxing)
- .debug_str     0x00003a90      0x756 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj
- .debug_str     0x00003a90      0xc7a CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
- .debug_str     0x00003a90      0x244 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_str     0x00003a90      0x289 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_str     0x00003a90      0x26f CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_str     0x00003a90      0x6e2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
- .debug_str     0x00003a90      0x853 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_str     0x00003a90      0x8e4 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_str     0x00003a90      0x41a CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_str     0x00003a90      0xfd5 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- .debug_str     0x00003a90      0x63b CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_str     0x00003a90      0xd04 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_str     0x00003a90       0x92 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
- .debug_str     0x00003a90      0x1a2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
- .debug_str     0x00003a90      0x1d2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
- .debug_str     0x00003a90      0x23f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
- .debug_str     0x00003a90      0x232 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
- .debug_str     0x00003a90      0x22d /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
- .debug_str     0x00003a90      0x1cd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
- .debug_str     0x00003a90      0x1a2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
- .debug_str     0x00003a90      0x49b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
- .debug_str     0x00003a90      0x4a6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-impure.o)
- .debug_str     0x00003a90      0x1ef /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
- .debug_str     0x00003a90      0x6a9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
- .debug_str     0x00003a90      0x1cb /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
- .debug_str     0x00003a90      0x1c5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
- .debug_str     0x00003a90      0x258 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
- .debug_str     0x00003a90      0x236 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
- .debug_str     0x00003a90      0x151 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
- .debug_str     0x00003a90       0xd1 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .debug_str     0x00003a90      0x15a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_str     0x00003a90       0xbf /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
- .debug_str     0x00003a90       0xbe /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
- .debug_str     0x00003a90      0x145 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
- .debug_str     0x00003a90       0xd1 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
- .debug_str     0x00003a90      0x15a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
- .debug_str     0x00003a90       0xbc /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
+ .debug_str     0x00003a02      0x756 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj
+ .debug_str     0x00003a02      0xcbc CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+ .debug_str     0x00003a02      0x244 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_str     0x00003a02      0x289 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_str     0x00003a02      0x26f CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_str     0x00003a02      0x6e2 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
+ .debug_str     0x00003a02      0x853 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_str     0x00003a02      0x8e4 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_str     0x00003a02      0x41a CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_str     0x00003a02      0xfd5 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+ .debug_str     0x00003a02      0x63b CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_str     0x00003a02      0xd04 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_str     0x00003a02       0x92 CMakeFiles/SPI2_MPU-6050.elf.dir/startup_stm32f103xb.s.obj
+ .debug_str     0x00003a02      0x1d5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
+ .debug_str     0x00003a02      0x1a5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
+ .debug_str     0x00003a02      0x22f /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
+ .debug_str     0x00003a02      0x229 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
+ .debug_str     0x00003a02      0x1c8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
+ .debug_str     0x00003a02      0x23a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
+ .debug_str     0x00003a02      0x1a2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
+ .debug_str     0x00003a02      0x49b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
+ .debug_str     0x00003a02      0x4a6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-impure.o)
+ .debug_str     0x00003a02      0x1ef /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
+ .debug_str     0x00003a02      0x6a9 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
+ .debug_str     0x00003a02      0x1cb /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
+ .debug_str     0x00003a02      0x1c5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
+ .debug_str     0x00003a02      0x258 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
+ .debug_str     0x00003a02      0x236 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
+ .debug_str     0x00003a02      0x151 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_str     0x00003a02       0xd1 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_str     0x00003a02       0xbe /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
+ .debug_str     0x00003a02      0x145 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_str     0x00003a02       0xd1 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .debug_str     0x00003a02      0x15a /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_str     0x00003a02       0xbf /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .debug_str     0x00003a02       0xbc /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
 
-.debug_frame    0x00000000     0x1f64
+.debug_frame    0x00000000     0x1e8c
  .debug_frame   0x00000000       0x38 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/gpio.c.obj
  .debug_frame   0x00000038       0x60 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj
- .debug_frame   0x00000098      0x140 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
- .debug_frame   0x000001d8       0x28 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_frame   0x00000200       0xc0 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_frame   0x000002c0       0x30 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_frame   0x000002f0       0x60 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
- .debug_frame   0x00000350      0x1cc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_frame   0x0000051c      0x19c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_frame   0x000006b8       0xe4 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_frame   0x0000079c      0x988 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
- .debug_frame   0x00001124      0x184 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_frame   0x000012a8      0x5dc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_frame   0x00001884       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
- .debug_frame   0x000018a4       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
- .debug_frame   0x000018d4       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
- .debug_frame   0x00001908       0x48 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
- .debug_frame   0x00001950       0x38 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
- .debug_frame   0x00001988       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
- .debug_frame   0x000019a8       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
- .debug_frame   0x000019d4       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
- .debug_frame   0x000019f4       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
- .debug_frame   0x00001a20       0xf4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
- .debug_frame   0x00001b14       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
- .debug_frame   0x00001b34       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
- .debug_frame   0x00001b68       0x54 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
- .debug_frame   0x00001bbc       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
- .debug_frame   0x00001bf0       0xac /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00001c9c       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x00001cec       0xc4 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00001db0       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x00001dd0       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
- .debug_frame   0x00001df4       0x4c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
- .debug_frame   0x00001e40       0x38 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
- .debug_frame   0x00001e78       0xc8 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
- .debug_frame   0x00001f40       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
+ .debug_frame   0x00000098      0x148 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+ .debug_frame   0x000001e0       0x28 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_frame   0x00000208       0xc0 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_frame   0x000002c8       0x30 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_frame   0x000002f8       0x60 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
+ .debug_frame   0x00000358      0x1cc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_frame   0x00000524      0x19c CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_frame   0x000006c0       0xe4 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_frame   0x000007a4      0x988 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+ .debug_frame   0x0000112c      0x184 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_frame   0x000012b0      0x5dc CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_frame   0x0000188c       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
+ .debug_frame   0x000018b8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
+ .debug_frame   0x000018d8       0x38 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
+ .debug_frame   0x00001910       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
+ .debug_frame   0x00001940       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
+ .debug_frame   0x00001960       0x30 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
+ .debug_frame   0x00001990       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
+ .debug_frame   0x000019bc       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-errno.o)
+ .debug_frame   0x000019dc       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
+ .debug_frame   0x00001a08       0xf4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
+ .debug_frame   0x00001afc       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
+ .debug_frame   0x00001b1c       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
+ .debug_frame   0x00001b50       0x54 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
+ .debug_frame   0x00001ba4       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
+ .debug_frame   0x00001bd8       0xac /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00001c84       0x50 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00001cd4       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x00001cf8       0x4c /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_frame   0x00001d44       0x38 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
+ .debug_frame   0x00001d7c       0xc8 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_frame   0x00001e44       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unordsf2.o)
+ .debug_frame   0x00001e68       0x24 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
 
 .debug_loclists
-                0x00000000     0x83b8
+                0x00000000     0x835f
  .debug_loclists
                 0x00000000       0x5d CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/i2c.c.obj
  .debug_loclists
-                0x0000005d      0x4c8 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
+                0x0000005d      0x519 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/main.c.obj
  .debug_loclists
-                0x00000525       0x17 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x00000576       0x17 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .debug_loclists
-                0x0000053c       0xb7 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x0000058d       0xb7 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/system_stm32f1xx.c.obj
  .debug_loclists
-                0x000005f3       0x74 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
+                0x00000644       0x74 CMakeFiles/SPI2_MPU-6050.elf.dir/Core/Src/usart.c.obj
  .debug_loclists
-                0x00000667       0xe1 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x000006b8       0xe1 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_loclists
-                0x00000748      0x530 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x00000799      0x530 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_loclists
-                0x00000c78      0x318 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x00000cc9      0x318 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
  .debug_loclists
-                0x00000f90     0x31ca CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
+                0x00000fe1     0x31ca CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
  .debug_loclists
-                0x0000415a      0x42e CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x000041ab      0x42e CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .debug_loclists
-                0x00004588     0x2c86 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x000045d9     0x2c86 CMakeFiles/SPI2_MPU-6050.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_loclists
-                0x0000720e       0x3e /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_atan2.o)
+                0x0000725f       0x2a /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_sqrt.o)
  .debug_loclists
-                0x0000724c       0x32 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-w_sqrt.o)
+                0x00007289       0x34 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-wf_atan2.o)
  .debug_loclists
-                0x0000727e      0x442 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_sqrt.o)
+                0x000072bd      0x4b8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_atan2.o)
  .debug_loclists
-                0x000076c0      0x338 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-e_atan2.o)
+                0x00007775      0x37b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_atan.o)
  .debug_loclists
-                0x000079f8      0x35b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_atan.o)
+                0x00007af0       0x57 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-sf_fabs.o)
  .debug_loclists
-                0x00007d53       0x19 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-s_fabs.o)
+                0x00007b47      0x1cc /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a(libm_a-ef_sqrt.o)
  .debug_loclists
-                0x00007d6c      0x1c2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
+                0x00007d13      0x1c2 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-memset.o)
  .debug_loclists
-                0x00007f2e       0x65 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
+                0x00007ed5       0x65 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-init.o)
  .debug_loclists
-                0x00007f93      0x1d0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
+                0x00007f3a      0x1d0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-findfp.o)
  .debug_loclists
-                0x00008163       0x2b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
+                0x0000810a       0x2b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-atexit.o)
  .debug_loclists
-                0x0000818e       0x42 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
+                0x00008135       0x42 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-fini.o)
  .debug_loclists
-                0x000081d0      0x102 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
+                0x00008177      0x102 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__call_atexit.o)
  .debug_loclists
-                0x000082d2       0xe6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
+                0x00008279       0xe6 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(libc_a-__atexit.o)
 
 .debug_line_str
                 0x00000000      0x11e
@@ -2243,10 +2201,6 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a
  .debug_line_str
                 0x0000011e       0x99 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivdf3.o)
  .debug_line_str
-                0x0000011e       0x99 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_line_str
-                0x0000011e       0x99 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unorddf2.o)
- .debug_line_str
                 0x0000011e       0x99 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_truncdfsf2.o)
  .debug_line_str
                 0x0000011e       0x99 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_addsubsf3.o)
@@ -2254,5 +2208,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a
                 0x0000011e       0x99 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_muldivsf3.o)
  .debug_line_str
                 0x0000011e       0x99 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_cmpsf2.o)
+ .debug_line_str
+                0x0000011e       0x99 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_unordsf2.o)
  .debug_line_str
                 0x0000011e       0x99 /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m/nofp/libgcc.a(_arm_fixsfsi.o)
