@@ -57,11 +57,12 @@
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 void MPU6050_Init(void);
-void MPU6050_Read_Accel(int16_t* accel_data, int16_t* gyro_data);
+void MPU6050_Read_Accel(int16_t* accel_data, int16_t* gyro_data, int16_t* accel_bias,int16_t* gyro_bias);
 void UART_Send_Angles(float pitch, float roll, float yaw);
 void Calculate_Angles(int16_t* accel_data, int16_t* gyro_data, float* pitch, float* roll, float* yaw);
 int IntToStr(int16_t value, char* buffer);
 int FloatToStr(float value, char* buffer);
+void MPU6050_Calibrate(int16_t* accel_bias, int16_t* gyro_bias);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -104,7 +105,10 @@ int main(void)
   /* USER CODE BEGIN 2 */
   MPU6050_Init();
   int16_t accel_data[3], gyro_data[3];
+  int16_t accel_bias[3] = {0, 0, 0}, gyro_bias[3] = {0, 0, 0};
   float pitch = 0.0f, roll = 0.0f, yaw = 0.0f;
+
+   MPU6050_Calibrate(accel_bias, gyro_bias);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -112,7 +116,7 @@ int main(void)
   while (1)
   {
     // Read accelerometer data
-    MPU6050_Read_Accel(accel_data, gyro_data);
+    MPU6050_Read_Accel(accel_data, gyro_data, accel_bias, gyro_bias);
 
     // Calculate pitch, roll, and yaw
     Calculate_Angles(accel_data, gyro_data, &pitch, &roll, &yaw);
@@ -121,7 +125,7 @@ int main(void)
     UART_Send_Angles(pitch, roll, yaw);
         
     // Small delay
-    HAL_Delay(100);
+    HAL_Delay(50);
     /* USER CODE BEGIN 3 */
       
   }
@@ -177,22 +181,53 @@ void MPU6050_Init(void) {
     HAL_I2C_Mem_Write(&hi2c1, MPU6050_ADDRESS, PWR_MGMT_1_REG, 1, &data, 1, 100);
 }
 
-void MPU6050_Read_Accel(int16_t* accel_data, int16_t* gyro_data) {
+void MPU6050_Calibrate(int16_t* accel_bias, int16_t* gyro_bias) {
+    int32_t accel_sum[3] = {0, 0, 0};
+    int32_t gyro_sum[3] = {0, 0, 0};
+    int16_t accel_data[3], gyro_data[3];
+    
+    // Collect 500 samples
+    for (int i = 0; i < 500; i++) {
+        MPU6050_Read_Accel(accel_data, gyro_data, accel_bias, gyro_bias);
+
+        // Sum the readings for bias calculation
+        accel_sum[0] += accel_data[0];
+        accel_sum[1] += accel_data[1];
+        accel_sum[2] += accel_data[2];
+        gyro_sum[0] += gyro_data[0];
+        gyro_sum[1] += gyro_data[1];
+        gyro_sum[2] += gyro_data[2];
+
+        HAL_Delay(5); // Small delay between readings
+    }
+
+    // Calculate the average values (biases)
+    accel_bias[0] = accel_sum[0] / 500;
+    accel_bias[1] = accel_sum[1] / 500;
+    accel_bias[2] = accel_sum[2] / 500;
+    gyro_bias[0] = gyro_sum[0] / 500;
+    gyro_bias[1] = gyro_sum[1] / 500;
+    gyro_bias[2] = gyro_sum[2] / 500;
+}
+
+
+void MPU6050_Read_Accel(int16_t* accel_data, int16_t* gyro_data, int16_t* accel_bias, int16_t* gyro_bias) {
     uint8_t data[14];
     
-    // Read 6 bytes starting from ACCEL_XOUT_H (accelerometer data)
-    HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDRESS, ACCEL_XOUT_H, 1, data, 6, 100);
+    // Read 14 bytes starting from ACCEL_XOUT_H (accelerometer and gyroscope data)
+    HAL_I2C_Mem_Read(&hi2c1, MPU6050_ADDRESS, ACCEL_XOUT_H, 1, data, 14, 100);
     
     // Combine high and low bytes for accelerometer
-    accel_data[0] = (int16_t)(data[0] << 8 | data[1]); // Accel X
-    accel_data[1] = (int16_t)(data[2] << 8 | data[3]); // Accel Y
-    accel_data[2] = (int16_t)(data[4] << 8 | data[5]); // Accel Z
+    accel_data[0] = (int16_t)(data[0] << 8 | data[1]) - accel_bias[0]; // Accel X
+    accel_data[1] = (int16_t)(data[2] << 8 | data[3]) - accel_bias[1]; // Accel Y
+    accel_data[2] = (int16_t)(data[4] << 8 | data[5]) - accel_bias[2]; // Accel Z
 
-     // Combine high and low bytes for gyroscope
-    gyro_data[0] = (int16_t)(data[8] << 8 | data[9]); // Gyro X
-    gyro_data[1] = (int16_t)(data[10] << 8 | data[11]); // Gyro Y
-    gyro_data[2] = (int16_t)(data[12] << 8 | data[13]); // Gyro Z
+    // Combine high and low bytes for gyroscope
+    gyro_data[0] = (int16_t)(data[8] << 8 | data[9]) - gyro_bias[0]; // Gyro X
+    gyro_data[1] = (int16_t)(data[10] << 8 | data[11]) - gyro_bias[1]; // Gyro Y
+    gyro_data[2] = (int16_t)(data[12] << 8 | data[13]) - gyro_bias[2]; // Gyro Z
 }
+
 
 void Calculate_Angles(int16_t* accel_data, int16_t* gyro_data, float* pitch, float* roll, float* yaw)
 {
@@ -253,85 +288,6 @@ void UART_Send_Angles(float pitch, float roll, float yaw) {
     // Transmit the constructed message over UART
     HAL_UART_Transmit(&huart2, (uint8_t*)buffer, index, HAL_MAX_DELAY);
 }
-
-
-//TODO:  
-/*void UART_Send_Accel_Data(int16_t* accel_data, int16_t* gyro_data) {
-    char buffer[100]; // Buffer to hold the message
-    int index = 0;
-
-    // Add "Accel X="
-    buffer[index++] = 'A';
-    buffer[index++] = 'c';
-    buffer[index++] = 'c';
-    buffer[index++] = 'e';
-    buffer[index++] = 'l';
-    buffer[index++] = ' ';
-    buffer[index++] = 'X';
-    buffer[index++] = '=';
-
-    // Convert accel_data[0] (X-axis) to string and add to buffer
-    index += IntToStr(accel_data[0], &buffer[index]);
-
-    // Add ", Y="
-    buffer[index++] = ',';
-    buffer[index++] = ' ';
-    buffer[index++] = 'Y';
-    buffer[index++] = '=';
-
-    // Convert accel_data[1] (Y-axis) to string and add to buffer
-    index += IntToStr(accel_data[1], &buffer[index]);
-
-    // Add ", Z="
-    buffer[index++] = ',';
-    buffer[index++] = ' ';
-    buffer[index++] = 'Z';
-    buffer[index++] = '=';
-
-    // Convert accel_data[2] (Z-axis) to string and add to buffer
-    index += IntToStr(accel_data[2], &buffer[index]);
-
-     // Add " | Gyro X="
-    buffer[index++] = ' ';
-    buffer[index++] = '|';
-    buffer[index++] = ' ';
-    buffer[index++] = 'G';
-    buffer[index++] = 'y';
-    buffer[index++] = 'r';
-    buffer[index++] = 'o';
-    buffer[index++] = ' ';
-    buffer[index++] = 'X';
-    buffer[index++] = '=';
-
-    // Convert gyro_data[0] (X-axis) to string and add to buffer
-    index += IntToStr(gyro_data[0], &buffer[index]);
-
-    // Add ", Y="
-    buffer[index++] = ',';
-    buffer[index++] = ' ';
-    buffer[index++] = 'Y';
-    buffer[index++] = '=';
-
-    // Convert gyro_data[1] (Y-axis) to string and add to buffer
-    index += IntToStr(gyro_data[1], &buffer[index]);
-
-    // Add ", Z="
-    buffer[index++] = ',';
-    buffer[index++] = ' ';
-    buffer[index++] = 'Z';
-    buffer[index++] = '=';
-
-    // Convert gyro_data[2] (Z-axis) to string and add to buffer
-    index += IntToStr(gyro_data[2], &buffer[index]);
-
-    // Add "\r\n"
-    buffer[index++] = '\r';
-    buffer[index++] = '\n';
-
-    // Transmit the constructed message over UART
-    HAL_UART_Transmit(&huart2, (uint8_t *)buffer, index, HAL_MAX_DELAY);
-}
-*/
 
 int FloatToStr(float value, char* buffer) {
     int i = 0;
